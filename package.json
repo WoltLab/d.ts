@@ -2,6 +2,8 @@
   "name": "@woltlab/d.ts",
   "private": true,
   "dependencies": {
+    "@ckeditor/ckeditor5-core": "^36.0.1",
+    "@ckeditor/ckeditor5-editor-classic": "^36.0.1",
     "@types/google.maps": "^3.52.0",
     "@types/jquery": "^3.5.16",
     "focus-trap": "^7.3.1",
