@@ -7,7 +7,7 @@
  * @woltlabExcludeBundle tiny
  */
 import { AjaxCallbackSetup, ResponseData } from "../../Ajax/Data";
-import { RedactorEditor } from "../Redactor/Editor";
+import { CKEditor } from "../../Component/Ckeditor";
 interface MessageReplyOptions {
     ajax: {
         className: string;
@@ -27,7 +27,7 @@ interface AjaxResponse {
 declare class UiMessageReply {
     protected readonly _container: HTMLElement;
     protected readonly _content: HTMLElement;
-    protected _editor: RedactorEditor | null;
+    protected _ckeditor?: CKEditor;
     protected _guestDialogId: string;
     protected _loadingOverlay: HTMLElement | null;
     protected readonly _options: MessageReplyOptions;
@@ -74,7 +74,7 @@ declare class UiMessageReply {
     /**
      * Returns the current editor instance.
      */
-    protected _getEditor(): RedactorEditor;
+    protected _getCKEditor(): CKEditor;
     /**
      * Inserts the rendered message into the post list, unless the post is on the next
      * page in which case a redirect will be performed instead.

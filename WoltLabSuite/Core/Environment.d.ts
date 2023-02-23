@@ -20,10 +20,6 @@ export declare function setup(): void;
  */
 export declare function browser(): string;
 /**
- * Returns the available editor's name or an empty string.
- */
-export declare function editor(): string;
-/**
  * Returns the browser platform.
  *
  * Possible values:

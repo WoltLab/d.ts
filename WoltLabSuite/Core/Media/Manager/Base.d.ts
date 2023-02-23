@@ -10,6 +10,7 @@ import { Media, MediaManagerOptions, MediaEditorCallbackObject, MediaUploadSucce
 import { DialogCallbackSetup, DialogCallbackObject } from "../../Ui/Dialog/Data";
 import UiPagination from "../../Ui/Pagination";
 import MediaManagerSearch from "./Search";
+import MediaUpload from "../Upload";
 import MediaEditor from "../Editor";
 interface DialogInitAjaxResponseData {
     returnValues: {
@@ -33,7 +34,7 @@ declare abstract class MediaManager<TOptions extends MediaManagerOptions = Media
     protected _mediaManagerMediaList: HTMLElement | null;
     protected _pagination: UiPagination | null;
     protected _search: MediaManagerSearch | null;
-    protected _upload: any;
+    protected _upload: MediaUpload | null;
     protected readonly _options: TOptions;
     constructor(options: Partial<TOptions>);
     /**

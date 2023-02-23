@@ -8,16 +8,11 @@
  */
 import MediaManager from "./Base";
 import { Media, MediaManagerEditorOptions, MediaUploadSuccessEventData } from "../Data";
-import { OnDropPayload } from "../../Ui/Redactor/DragAndDrop";
-interface PasteFromClipboard {
-    blob: Blob;
-}
-declare class MediaManagerEditor extends MediaManager<MediaManagerEditorOptions> {
-    protected _activeButton: any;
-    protected readonly _buttons: HTMLCollectionOf<HTMLElement>;
+import type { UploadMediaEventPayload } from "../../Component/Ckeditor/Media";
+export declare class MediaManagerEditor extends MediaManager<MediaManagerEditorOptions> {
     protected _mediaToInsert: Map<number, Media>;
     protected _mediaToInsertByClipboard: boolean;
-    protected _uploadData: OnDropPayload | PasteFromClipboard | null;
+    protected _uploadData?: UploadMediaEventPayload;
     protected _uploadId: number | null;
     constructor(options: Partial<MediaManagerEditorOptions>);
     protected _addButtonEventListeners(): void;
@@ -25,12 +20,11 @@ declare class MediaManagerEditor extends MediaManager<MediaManagerEditorOptions>
      * Builds the dialog to setup inserting media files.
      */
     protected _buildInsertDialog(): void;
-    protected _click(event: Event): void;
     protected _dialogShow(): void;
     /**
      * Handles pasting and dragging and dropping files into the editor.
      */
-    protected _editorUpload(data: OnDropPayload): void;
+    protected _editorUpload(data: UploadMediaEventPayload): void;
     /**
      * Returns the id of the insert dialog based on the media files to be inserted.
      */
@@ -66,4 +60,4 @@ declare class MediaManagerEditor extends MediaManager<MediaManagerEditorOptions>
     getMode(): string;
     setupMediaElement(media: Media, mediaElement: HTMLElement): void;
 }
-export = MediaManagerEditor;
+export default MediaManagerEditor;

@@ -15,6 +15,10 @@ declare const Devtools: {
      */
     toggleEditorAutosave(forceDisable: boolean): void;
     /**
+     * Enables or disables the inspector for the editor.
+     */
+    toggleEditorInspector(forceEnable: boolean): void;
+    /**
      * Enables/disables logging for fired event listener events.
      */
     toggleEventLogging(forceEnable: boolean): void;
@@ -24,6 +28,7 @@ declare const Devtools: {
     _internal_: {
         enable(): void;
         editorAutosave(): boolean;
+        editorInspector(): boolean;
         eventLog(identifier: string, action: string): void;
     };
 };
