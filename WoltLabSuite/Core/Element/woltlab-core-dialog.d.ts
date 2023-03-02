@@ -37,6 +37,10 @@ export declare class WoltlabCoreDialogElement extends HTMLElement {
     set incomplete(incomplete: boolean);
     attachControls(options: WoltlabCoreDialogControlOptions): void;
     connectedCallback(): void;
-    addEventListener<T extends keyof WoltlabCoreDialogEventMap>(type: T, listener: (this: WoltlabCoreDialogElement, ev: WoltlabCoreDialogEventMap[T]) => any, options?: boolean | AddEventListenerOptions): void;
+}
+export interface WoltlabCoreDialogElement extends HTMLElement {
+    addEventListener: {
+        <T extends keyof WoltlabCoreDialogEventMap>(type: T, listener: (this: WoltlabCoreDialogElement, ev: WoltlabCoreDialogEventMap[T]) => any, options?: boolean | AddEventListenerOptions): void;
+    } & HTMLElement["addEventListener"];
 }
 export default WoltlabCoreDialogElement;

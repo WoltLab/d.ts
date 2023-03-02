@@ -15,6 +15,14 @@ declare const DomUtil: {
      */
     getUniqueId(): string;
     /**
+     * Escapes the input string for use within an attribute selector:
+     *
+     * documenty.querySelector(`[data-foo="${escapeAttributeSelector(`"quoted"`)}"]`);
+     *
+     * @since 6.0
+     */
+    escapeAttributeSelector(selector: string): string;
+    /**
      * Returns the element's id. If there is no id set, a unique id will be
      * created and assigned.
      */
