@@ -8,8 +8,10 @@
  * @license  GNU Lesser General Public License <http://opensource.org/licenses/lgpl-license.php>
  */
 import { PageMenuMainProvider } from "./Ui/Page/Menu/Main/Provider";
+import type { ColorScheme } from "./Controller/Style/ColorScheme";
 import "perfect-scrollbar";
 export interface BoostrapOptions {
+    colorScheme: ColorScheme;
     enableMobileMenu: boolean;
     pageMenuMainProvider: PageMenuMainProvider;
 }
