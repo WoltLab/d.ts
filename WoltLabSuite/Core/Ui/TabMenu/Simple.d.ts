@@ -30,7 +30,7 @@ declare class TabMenuSimple {
     /**
      * Initializes this tab menu.
      */
-    init(oldTabs?: Map<string, HTMLLIElement> | null): HTMLElement | null;
+    init(): HTMLElement | null;
     /**
      * Selects a tab.
      *
@@ -47,13 +47,6 @@ declare class TabMenuSimple {
      * item as the parameter.
      */
     selectFirstVisible(): boolean;
-    /**
-     * Rebuilds all tabs, must be invoked after adding or removing of tabs.
-     *
-     * Warning: Do not remove tabs if you plan to add these later again or at least clone the nodes
-     *          to prevent issues with already bound event listeners. Consider hiding them via CSS.
-     */
-    rebuild(): void;
     /**
      * Returns true if this tab menu has a tab with provided name.
      */

@@ -17,6 +17,10 @@ type SetupConfigurationEventPayload = {
     configuration: EditorConfig;
     features: Features;
 };
+type SubmitOnEnterPayload = {
+    ckeditor: CKEditor;
+    html: string;
+};
 declare class EventDispatcher {
     #private;
     constructor(element: HTMLElement);
@@ -29,6 +33,7 @@ declare class EventDispatcher {
     reset(payload: ResetEventPayload): void;
     setupConfiguration(payload: SetupConfigurationEventPayload): void;
     setupFeatures(payload: SetupFeaturesEventPayload): void;
+    submitOnEnter(payload: SubmitOnEnterPayload): void;
     uploadAttachment(payload: UploadAttachmentEventPayload): void;
     uploadMedia(payload: UploadMediaEventPayload): void;
 }
@@ -44,6 +49,7 @@ declare class EventListener {
     reset(callback: (payload: ResetEventPayload) => void): this;
     setupConfiguration(callback: (payload: SetupConfigurationEventPayload) => void): this;
     setupFeatures(callback: (payload: SetupFeaturesEventPayload) => void): this;
+    submitOnEnter(callback: (payload: SubmitOnEnterPayload) => void): this;
     uploadAttachment(callback: (payload: UploadAttachmentEventPayload) => void): this;
     uploadMedia(callback: (payload: UploadMediaEventPayload) => void): this;
 }
