@@ -1,9 +1,21 @@
+/**
+ * Provides a strongly typed event interface for CKEditor on top of native DOM
+ * events to prevent memory leaks.
+ *
+ * @author Alexander Ebert
+ * @copyright 2001-2023 WoltLab GmbH
+ * @license GNU Lesser General Public License <http://opensource.org/licenses/lgpl-license.php>
+ * @since 6.0
+ */
 import type { CKEditor } from "../Ckeditor";
 import type { EditorConfig } from "@ckeditor/ckeditor5-core/src/editor/editorconfig";
 import type { Features } from "./Configuration";
 import type { InsertAttachmentPayload, RemoveAttachmentPayload, UploadAttachmentEventPayload } from "./Attachment";
 import type { UploadMediaEventPayload } from "./Media";
 import type { InsertQuoteEventPayload } from "./Quote";
+type CollectMetaDataEventPayload = {
+    metaData: Record<string, unknown>;
+};
 type ReadyEventPayload = {
     ckeditor: CKEditor;
 };
@@ -24,6 +36,7 @@ type SubmitOnEnterPayload = {
 declare class EventDispatcher {
     #private;
     constructor(element: HTMLElement);
+    collectMetaData(payload: CollectMetaDataEventPayload): void;
     destroy(): void;
     discardRecoveredData(): void;
     insertAttachment(payload: InsertAttachmentPayload): void;
@@ -40,6 +53,7 @@ declare class EventDispatcher {
 declare class EventListener {
     #private;
     constructor(element: HTMLElement);
+    collectMetaData(callback: (payload: CollectMetaDataEventPayload) => void): this;
     destroy(callback: () => void): this;
     discardRecoveredData(callback: () => void): this;
     insertAttachment(callback: (payload: InsertAttachmentPayload) => void): this;
