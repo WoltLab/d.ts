@@ -9,5 +9,5 @@
  * @since 6.0
  */
 import type { CKEditor } from "../Ckeditor";
-import type ClassicEditor from "@ckeditor/ckeditor5-editor-classic/src/classiceditor";
+import type { ClassicEditor } from "./Types";
 export declare function setup(editor: ClassicEditor, ckeditor: CKEditor): void;

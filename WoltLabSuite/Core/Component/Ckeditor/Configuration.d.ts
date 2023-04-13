@@ -6,7 +6,7 @@
  * @license GNU Lesser General Public License <http://opensource.org/licenses/lgpl-license.php>
  * @since 6.0
  */
-import type { EditorConfig } from "@ckeditor/ckeditor5-core/src/editor/editorconfig";
+import type { EditorConfig } from "./Types";
 export type Features = {
     alignment: boolean;
     attachment: boolean;

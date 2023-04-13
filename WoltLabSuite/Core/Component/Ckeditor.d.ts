@@ -12,7 +12,7 @@
  * @since 6.0
  */
 import { Features } from "./Ckeditor/Configuration";
-import type ClassicEditor from "@ckeditor/ckeditor5-editor-classic/src/classiceditor";
+import { ClassicEditor } from "./Ckeditor/Types";
 import "ckeditor5-bundle";
 declare class Ckeditor {
     #private;
