@@ -13,6 +13,9 @@ export type Features = {
     autosave: string;
     code: boolean;
     codeBlock: boolean;
+    fontColor: boolean;
+    fontFamily: boolean;
+    fontSize: boolean;
     heading: boolean;
     html: boolean;
     image: boolean;

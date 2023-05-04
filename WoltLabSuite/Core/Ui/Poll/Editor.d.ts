@@ -15,6 +15,7 @@ interface PollOption {
     optionValue: string;
 }
 declare class UiPollEditor {
+    #private;
     private readonly container;
     private readonly endTimeField;
     private readonly isChangeableNoField;

@@ -38,6 +38,6 @@ type WoltlabBbcodeItem = {
 };
 export declare function setupCkeditor(element: HTMLElement, features: Features, bbcodes: WoltlabBbcodeItem[]): Promise<CKEditor>;
 export declare function getCkeditor(element: HTMLElement): CKEditor | undefined;
-export declare function getCkeditorById(id: string): Ckeditor | undefined;
+export declare function getCkeditorById(id: string, throwIfNotExists?: boolean): Ckeditor | undefined;
 export type CKEditor = InstanceType<typeof Ckeditor>;
 export {};
