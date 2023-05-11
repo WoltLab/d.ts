@@ -12,7 +12,7 @@
  * @since 6.0
  */
 import { Features } from "./Ckeditor/Configuration";
-import { ClassicEditor } from "./Ckeditor/Types";
+import { ClassicEditor, CodeBlockConfig } from "./Ckeditor/Types";
 import "ckeditor5-bundle";
 declare class Ckeditor {
     #private;
@@ -36,7 +36,7 @@ type WoltlabBbcodeItem = {
     name: string;
     label: string;
 };
-export declare function setupCkeditor(element: HTMLElement, features: Features, bbcodes: WoltlabBbcodeItem[]): Promise<CKEditor>;
+export declare function setupCkeditor(element: HTMLElement, features: Features, bbcodes: WoltlabBbcodeItem[], codeBlockLanguages: CodeBlockConfig["languages"]): Promise<CKEditor>;
 export declare function getCkeditor(element: HTMLElement): CKEditor | undefined;
 export declare function getCkeditorById(id: string, throwIfNotExists?: boolean): Ckeditor | undefined;
 export type CKEditor = InstanceType<typeof Ckeditor>;

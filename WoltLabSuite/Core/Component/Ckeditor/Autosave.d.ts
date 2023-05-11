@@ -10,4 +10,4 @@
 import type { ClassicEditor, EditorConfig } from "./Types";
 export declare function deleteDraft(identifier: string): void;
 export declare function setupRestoreDraft(editor: ClassicEditor, identifier: string): void;
-export declare function initializeAutosave(autosave: string, configuration: EditorConfig): void;
+export declare function initializeAutosave(element: HTMLElement, configuration: EditorConfig, identifier: string): void;
