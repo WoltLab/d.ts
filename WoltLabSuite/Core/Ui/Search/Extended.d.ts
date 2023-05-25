@@ -11,6 +11,7 @@ export declare class UiSearchExtended {
     private readonly queryInput;
     private readonly typeInput;
     private readonly delimiter;
+    private readonly filtersContainer;
     private searchID;
     private pages;
     private activePage;
