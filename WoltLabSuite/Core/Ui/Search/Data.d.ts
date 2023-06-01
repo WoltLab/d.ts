@@ -14,4 +14,5 @@ export interface SearchInputOptions {
     minLength?: number;
     noResultPlaceholder?: string;
     preventSubmit?: boolean;
+    suppressErrors?: boolean;
 }

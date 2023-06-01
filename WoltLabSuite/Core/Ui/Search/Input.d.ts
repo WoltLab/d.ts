@@ -23,6 +23,7 @@ declare class UiSearchInput {
     private readonly noResultPlaceholder;
     private readonly preventSubmit;
     private request?;
+    private readonly suppressErrors;
     private timerDelay?;
     /**
      * Initializes the search input field.
