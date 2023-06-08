@@ -6,8 +6,8 @@
  * @license  WoltLab License <http://www.woltlab.com/license-agreement.html>
  * @since 5.5
  */
-import UpdateHandler from "./UpdateHandler";
 import UiPostManager from "../../Ui/Post/Manager";
+import UpdateHandler from "./UpdateHandler";
 export declare class ThreadUpdateHandler extends UpdateHandler {
     protected boardID: number;
     protected postHandler?: UiPostManager;
