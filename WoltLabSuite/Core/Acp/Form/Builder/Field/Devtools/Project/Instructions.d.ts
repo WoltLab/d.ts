@@ -26,6 +26,7 @@ type PipFilenameMap = {
     [k: string]: string;
 };
 declare class Instructions {
+    #private;
     protected readonly addButton: HTMLAnchorElement;
     protected readonly form: HTMLFormElement;
     protected readonly formFieldId: string;
