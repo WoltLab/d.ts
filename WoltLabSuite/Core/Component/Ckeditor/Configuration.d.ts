@@ -21,6 +21,7 @@ export type Features = {
     image: boolean;
     link: boolean;
     list: boolean;
+    mark: boolean;
     media: boolean;
     mention: boolean;
     quoteBlock: boolean;
