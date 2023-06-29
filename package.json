@@ -2,6 +2,7 @@
   "name": "@woltlab/d.ts",
   "private": true,
   "dependencies": {
+    "@ckeditor/ckeditor5-code-block": "^37.1.0",
     "@ckeditor/ckeditor5-core": "^37.0.1",
     "@ckeditor/ckeditor5-editor-classic": "^37.0.1",
     "@types/google.maps": "^3.52.0",
