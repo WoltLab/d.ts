@@ -32,5 +32,6 @@ export type Features = {
     superscript: boolean;
     table: boolean;
     underline: boolean;
+    undo: boolean;
 };
 export declare function createConfigurationFor(features: Features): EditorConfig;

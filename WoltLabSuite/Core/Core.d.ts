@@ -89,14 +89,4 @@ export declare function debounce<F extends DebounceCallback>(func: F, waitMillis
  */
 export declare function enableLegacyInheritance<T>(legacyClass: T): void;
 export declare function getXsrfToken(): string;
-/**
- * Permits the interaction with Redactor, that usually requires
- * changes to the selection, without interfering with an active
- * focus trap.
- *
- * It is strongly recommended to close a dialog before interacting
- * with Redactor. This helper is designed for cases where this
- * is not possible.
- */
-export declare function interactWithRedactor(callback: () => void | Promise<void>): void;
 export {};
