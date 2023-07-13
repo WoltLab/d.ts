@@ -10,10 +10,10 @@
  * @copyright 2001-2023 WoltLab GmbH
  * @license GNU Lesser General Public License <http://opensource.org/licenses/lgpl-license.php>
  * @since 6.0
+ * @woltlabExcludeBundle tiny
  */
 import { Features } from "./Ckeditor/Configuration";
 import { ClassicEditor, CodeBlockConfig } from "./Ckeditor/Types";
-import "ckeditor5-bundle";
 declare class Ckeditor {
     #private;
     constructor(editor: ClassicEditor, features: Features);
