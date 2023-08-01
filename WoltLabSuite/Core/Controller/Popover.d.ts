@@ -60,6 +60,7 @@ declare class ControllerPopover implements AjaxCallbackObject {
      * Sets the content for given identifier and object id.
      */
     setContent(identifier: string, objectId: number | string, content: string): void;
+    resetCache(identifier: string, objectId: number): void;
     /**
      * Handles the mouse start hovering the popover-enabled element.
      */
@@ -121,4 +122,8 @@ export declare function setContent(identifier: string, objectId: number, content
  * Sends an AJAX requests to the server, simple wrapper to reuse the request object.
  */
 export declare function ajaxApi(data: RequestPayload, success: CallbackSuccess, failure: CallbackFailure): void;
+/**
+ * Resets the cached data for an object.
+ */
+export declare function resetCache(identifier: string, objectId: number): void;
 export {};
