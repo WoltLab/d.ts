@@ -9,5 +9,15 @@
  */
 export type { ClassicEditor } from "@ckeditor/ckeditor5-editor-classic";
 export type { CodeBlockConfig } from "@ckeditor/ckeditor5-code-block";
-export type { EditorConfig } from "@ckeditor/ckeditor5-core";
 export type { Element } from "@ckeditor/ckeditor5-engine";
+import type { EditorConfig as UpstreamEditorConfig } from "@ckeditor/ckeditor5-core";
+type WoltlabBbcodeButton = {
+    icon?: string;
+    name: string;
+    label: string;
+};
+type WoltlabBbcodeConfig = WoltlabBbcodeButton[];
+interface EditorConfig extends UpstreamEditorConfig {
+    woltlabBbcode?: WoltlabBbcodeConfig;
+}
+export type { EditorConfig };
