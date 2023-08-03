@@ -9,6 +9,7 @@
 type LanguageId = string;
 type I18nValues = Record<LanguageId, string>;
 export interface DialogData {
+    optionTitle?: string;
     checkboxValues: {
         isDisabled: number;
         required: number;

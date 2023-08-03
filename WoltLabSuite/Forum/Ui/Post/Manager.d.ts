@@ -9,14 +9,10 @@ import UiMessageManager from "WoltLabSuite/Core/Ui/Message/Manager";
 type StringableValue = boolean | number | string;
 interface AjaxResponse {
     returnValues: {
-        postData: {
-            [key: string]: ArbitraryObject;
-        };
-        threadData: {
-            [key: string]: {
-                deleted?: string;
-            };
-        };
+        postData: Record<string, ArbitraryObject>;
+        threadData: Record<string, {
+            deleted?: string;
+        }>;
     };
 }
 declare class UiPostManager extends UiMessageManager {

@@ -13,9 +13,7 @@ export declare class ThreadUpdateHandler extends UpdateHandler {
     protected postHandler?: UiPostManager;
     constructor(boardID: number);
     setPostHandler(postHandler: UiPostManager): void;
-    update(threadId: number, data: {
-        [key: string]: string;
-    }): void;
+    update(threadId: number, data: Record<string, string>): void;
     protected close(threadId: number): void;
     protected open(threadId: number): void;
     protected delete(threadId: number, _boardLink: string): void;

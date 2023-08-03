@@ -11,9 +11,7 @@ export declare abstract class UpdateHandler {
     constructor();
     /** @deprecated */
     setMarkAsDoneHandler(): void;
-    update(threadId: number, data: {
-        [key: string]: string;
-    }, reloadClipboard: boolean): void;
+    update(threadId: number, data: Record<string, string>, reloadClipboard: boolean): void;
     protected updateProperty(threadId: number, property: string, value: unknown): void;
     private handleCustomEvent;
     getValue(threadId: number, property: string): boolean;
