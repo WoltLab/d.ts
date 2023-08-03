@@ -13,9 +13,10 @@ interface AjaxResponseData extends ResponseData {
 }
 interface AjaxAddParticipantsData extends AjaxResponseData {
     returnValues: {
-        count?: number;
-        errorMessage?: string;
-        successMessage?: string;
+        errorMessage: string;
+    } | {
+        count: number;
+        successMessage: string;
     };
 }
 interface AjaxGetAddParticipantsFormData extends AjaxResponseData {
