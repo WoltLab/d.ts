@@ -13,6 +13,9 @@ import type { Features } from "./Configuration";
 import type { InsertAttachmentPayload, RemoveAttachmentPayload, UploadAttachmentEventPayload } from "./Attachment";
 import type { UploadMediaEventPayload } from "./Media";
 import type { InsertQuoteEventPayload } from "./Quote";
+type BbcodeEventPayload = {
+    bbcode: string;
+};
 type CollectMetaDataEventPayload = {
     metaData: Record<string, unknown>;
 };
@@ -53,6 +56,7 @@ declare class EventDispatcher {
 declare class EventListener {
     #private;
     constructor(element: HTMLElement);
+    bbcode(callback: (payload: BbcodeEventPayload) => boolean): this;
     collectMetaData(callback: (payload: CollectMetaDataEventPayload) => void): this;
     destroy(callback: () => void): this;
     discardRecoveredData(callback: () => void): this;

@@ -11,4 +11,5 @@
  * @since 6.0
  * @woltlabExcludeBundle tiny
  */
+export declare function normalizeLegacyHtml(html: string): string;
 export declare function normalizeLegacyMessage(element: HTMLElement): void;
