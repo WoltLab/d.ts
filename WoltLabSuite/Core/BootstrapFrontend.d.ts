@@ -6,13 +6,12 @@
  * @license  GNU Lesser General Public License <http://opensource.org/licenses/lgpl-license.php>
  */
 import { ShareProvider } from "./Ui/Message/Share/Providers";
-import type { ColorScheme } from "./Controller/Style/ColorScheme";
 interface BootstrapOptions {
     backgroundQueue: {
         url: string;
         force: boolean;
     };
-    colorScheme: ColorScheme;
+    dynamicColorScheme: boolean;
     enableUserPopover: boolean;
     executeCronjobs: string | undefined;
     shareButtonProviders?: ShareProvider[];

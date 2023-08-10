@@ -48,7 +48,7 @@ declare abstract class MediaManager<TOptions extends MediaManagerOptions = Media
     /**
      * Handles clicks on the media manager button.
      */
-    protected _click(event: Event): void;
+    protected _click(event?: Event): void;
     /**
      * Is called if the media manager dialog is closed.
      */

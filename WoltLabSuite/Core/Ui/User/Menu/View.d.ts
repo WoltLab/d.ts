@@ -12,6 +12,7 @@ export declare class UserMenuView {
     private usePerfectScrollbar;
     private readonly focusTrap;
     private readonly markAllAsReadButton;
+    private perfectScrollbar;
     private readonly provider;
     constructor(provider: UserMenuProvider);
     getElement(): HTMLElement;
