@@ -62,6 +62,7 @@ interface PreviousException {
     message: string;
     stacktrace: string;
 }
+type ExtraInformation = [string, number | string];
 export interface AjaxResponseException extends ResponseData {
     exceptionID?: string;
     exception?: string | null;
@@ -73,5 +74,6 @@ export interface AjaxResponseException extends ResponseData {
         description?: string;
     };
     stacktrace?: string;
+    extraInformation?: ExtraInformation[];
 }
 export {};
