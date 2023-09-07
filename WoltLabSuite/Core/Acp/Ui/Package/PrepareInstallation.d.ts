@@ -15,9 +15,10 @@ interface AjaxResponse {
     };
 }
 declare class AcpUiPackagePrepareInstallation {
+    #private;
     private identifier;
     private version;
-    start(identifier: string, version: string): void;
+    start(identifier: string, version: string): Promise<void>;
     private prepare;
     private submit;
     _ajaxSuccess(data: AjaxResponse): void;
