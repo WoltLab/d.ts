@@ -13,7 +13,7 @@
  * @woltlabExcludeBundle tiny
  */
 import { Features } from "./Ckeditor/Configuration";
-import { ClassicEditor, CodeBlockConfig } from "./Ckeditor/Types";
+import type { ClassicEditor, CodeBlockConfig } from "./Ckeditor/Types";
 declare class Ckeditor {
     #private;
     constructor(editor: ClassicEditor, features: Features);
