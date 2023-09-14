@@ -12,11 +12,11 @@
  * @since 6.0
  * @woltlabExcludeBundle tiny
  */
+import type { CKEditor5 } from "@woltlab/editor";
 import { Features } from "./Ckeditor/Configuration";
-import type { ClassicEditor, CodeBlockConfig } from "./Ckeditor/Types";
 declare class Ckeditor {
     #private;
-    constructor(editor: ClassicEditor, features: Features);
+    constructor(editor: CKEditor5.ClassicEditor.ClassicEditor, features: Features);
     destroy(): Promise<void>;
     discardDraft(): void;
     focus(): void;
@@ -36,7 +36,7 @@ type WoltlabBbcodeItem = {
     name: string;
     label: string;
 };
-export declare function setupCkeditor(element: HTMLElement, features: Features, bbcodes: WoltlabBbcodeItem[], codeBlockLanguages: CodeBlockConfig["languages"]): Promise<CKEditor>;
+export declare function setupCkeditor(element: HTMLElement, features: Features, bbcodes: WoltlabBbcodeItem[], codeBlockLanguages: CKEditor5.CodeBlock.CodeBlockConfig["languages"]): Promise<CKEditor>;
 export declare function getCkeditor(element: HTMLElement): CKEditor | undefined;
 export declare function getCkeditorById(id: string, throwIfNotExists?: boolean): Ckeditor | undefined;
 export type CKEditor = InstanceType<typeof Ckeditor>;

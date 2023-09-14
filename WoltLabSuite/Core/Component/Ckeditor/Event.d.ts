@@ -8,11 +8,11 @@
  * @since 6.0
  */
 import type { CKEditor } from "../Ckeditor";
-import type { EditorConfig } from "./Types";
 import type { Features } from "./Configuration";
 import type { InsertAttachmentPayload, RemoveAttachmentPayload, UploadAttachmentEventPayload } from "./Attachment";
 import type { UploadMediaEventPayload } from "./Media";
 import type { InsertQuoteEventPayload } from "./Quote";
+import type { CKEditor5 } from "@woltlab/editor";
 type BbcodeEventPayload = {
     bbcode: string;
 };
@@ -29,8 +29,9 @@ type SetupFeaturesEventPayload = {
     features: Features;
 };
 type SetupConfigurationEventPayload = {
-    configuration: EditorConfig;
+    configuration: CKEditor5.Core.EditorConfig;
     features: Features;
+    modules: typeof CKEditor5;
 };
 type SubmitOnEnterPayload = {
     ckeditor: CKEditor;

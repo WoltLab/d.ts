@@ -7,7 +7,7 @@
  * @since 6.0
  * @woltlabExcludeBundle tiny
  */
-import type { EditorConfig } from "./Types";
+import type { CKEditor5 } from "@woltlab/editor";
 export type Features = {
     alignment: boolean;
     attachment: boolean;
@@ -35,4 +35,4 @@ export type Features = {
     underline: boolean;
     undo: boolean;
 };
-export declare function createConfigurationFor(features: Features): EditorConfig;
+export declare function createConfigurationFor(features: Features): CKEditor5.Core.EditorConfig;
