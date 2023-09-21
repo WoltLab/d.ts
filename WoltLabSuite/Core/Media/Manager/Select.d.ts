@@ -24,6 +24,6 @@ declare class MediaManagerSelect extends MediaManager<MediaManagerSelectOptions>
     /**
      * Handles clicking on the remove button.
      */
-    protected _removeMedia(event: Event): void;
+    protected _removeMedia(selectButton: HTMLElement, removeButton: HTMLElement): void;
 }
 export = MediaManagerSelect;

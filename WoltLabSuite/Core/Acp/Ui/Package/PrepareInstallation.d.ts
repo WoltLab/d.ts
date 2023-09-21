@@ -14,11 +14,12 @@ interface AjaxResponse {
         template?: string;
     };
 }
+type RedirectLocation = "license";
 declare class AcpUiPackagePrepareInstallation {
     #private;
     private identifier;
     private version;
-    start(identifier: string, version: string): Promise<void>;
+    start(identifier: string, version: string, redirectLocation?: RedirectLocation): Promise<void>;
     private prepare;
     private submit;
     _ajaxSuccess(data: AjaxResponse): void;
