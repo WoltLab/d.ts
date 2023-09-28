@@ -8,6 +8,7 @@
  */
 import UserMenuView from "../View";
 export type UserMenuButton = {
+    clickCallback?: () => void;
     icon: string;
     link: string;
     name: string;
