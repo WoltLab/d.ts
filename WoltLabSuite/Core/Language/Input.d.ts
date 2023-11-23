@@ -14,7 +14,7 @@ export interface Languages {
 }
 type Values = Map<LanguageId, string>;
 export type InputOrTextarea = HTMLInputElement | HTMLTextAreaElement;
-type CallbackEvent = "select" | "submit";
+type CallbackEvent = "beforeSelect" | "select" | "submit";
 type Callback = (element: InputOrTextarea) => void;
 /**
  * Initializes an input field.
