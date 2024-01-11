@@ -9,9 +9,8 @@
 import Field from "./Field";
 import { FormBuilderData } from "../Data";
 declare class Checkboxes extends Field {
-    protected _fields: HTMLInputElement[];
-    constructor(fieldId: string);
     protected _getData(): FormBuilderData;
     protected _readField(): void;
+    protected get _fields(): HTMLInputElement[];
 }
 export = Checkboxes;
