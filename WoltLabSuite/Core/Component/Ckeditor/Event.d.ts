@@ -12,6 +12,7 @@ import type { Features } from "./Configuration";
 import type { InsertAttachmentPayload, RemoveAttachmentPayload, UploadAttachmentEventPayload } from "./Attachment";
 import type { UploadMediaEventPayload } from "./Media";
 import type { InsertQuoteEventPayload } from "./Quote";
+import type { AutosavePayload } from "./Autosave";
 import type { CKEditor5 } from "@woltlab/editor";
 type BbcodeEventPayload = {
     bbcode: string;
@@ -43,6 +44,7 @@ declare class EventDispatcher {
     collectMetaData(payload: CollectMetaDataEventPayload): void;
     destroy(): void;
     discardRecoveredData(): void;
+    autosave(payload: AutosavePayload): void;
     insertAttachment(payload: InsertAttachmentPayload): void;
     insertQuote(payload: InsertQuoteEventPayload): void;
     ready(payload: ReadyEventPayload): void;
@@ -71,6 +73,7 @@ declare class EventListener {
     submitOnEnter(callback: (payload: SubmitOnEnterPayload) => void): this;
     uploadAttachment(callback: (payload: UploadAttachmentEventPayload) => void): this;
     uploadMedia(callback: (payload: UploadMediaEventPayload) => void): this;
+    autosave(callback: (payload: AutosavePayload) => void): this;
 }
 export declare function dispatchToCkeditor(element: HTMLElement): EventDispatcher;
 export declare function listenToCkeditor(element: HTMLElement): EventListener;
