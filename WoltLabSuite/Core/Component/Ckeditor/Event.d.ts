@@ -42,6 +42,7 @@ declare class EventDispatcher {
     #private;
     constructor(element: HTMLElement);
     collectMetaData(payload: CollectMetaDataEventPayload): void;
+    changeData(): void;
     destroy(): void;
     discardRecoveredData(): void;
     autosave(payload: AutosavePayload): void;
@@ -60,6 +61,7 @@ declare class EventListener {
     #private;
     constructor(element: HTMLElement);
     bbcode(callback: (payload: BbcodeEventPayload) => boolean): this;
+    changeData(callback: () => void): this;
     collectMetaData(callback: (payload: CollectMetaDataEventPayload) => void): this;
     destroy(callback: () => void): this;
     discardRecoveredData(callback: () => void): this;
