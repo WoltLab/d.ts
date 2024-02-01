@@ -12,7 +12,7 @@ interface BootstrapOptions {
         force: boolean;
     };
     dynamicColorScheme: boolean;
-    enableUserPopover: boolean;
+    endpointUserPopover: string;
     executeCronjobs: string | undefined;
     shareButtonProviders?: ShareProvider[];
     styleChanger: boolean;

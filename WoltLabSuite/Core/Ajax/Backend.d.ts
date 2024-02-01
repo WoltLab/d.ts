@@ -29,5 +29,5 @@ declare class BackendRequest {
 declare class GetRequest extends BackendRequest {
     allowCaching(): this;
 }
-export declare function prepareRequest(url: string): SetupRequest;
+export declare function prepareRequest(url: string | URL): SetupRequest;
 export {};

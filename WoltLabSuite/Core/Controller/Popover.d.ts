@@ -4,6 +4,7 @@
  * @author  Alexander Ebert
  * @copyright  2001-2019 WoltLab GmbH
  * @license  GNU Lesser General Public License <http://opensource.org/licenses/lgpl-license.php>
+ * @deprecated 6.1 Use `WoltLabSuite/Core/Component/Popover` instead
  */
 import { AjaxCallbackObject, AjaxCallbackSetup, CallbackFailure, CallbackSuccess, RequestPayload } from "../Ajax/Data";
 type CallbackLoad = (objectId: number | string, popover: ControllerPopover, element: HTMLElement) => void;
@@ -112,6 +113,8 @@ declare class ControllerPopover implements AjaxCallbackObject {
  * 		popover.setContent('com.example.bar.foo', objectId, htmlTemplateString);
  * 	}
  * });
+ *
+ * @deprecated 6.1 Use `WoltLabSuite/Core/Component/Popover` instead
  */
 export declare function init(options: PopoverOptions): void;
 /**
