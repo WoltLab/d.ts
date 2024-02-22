@@ -1,5 +1,6 @@
 /**
  * @woltlabExcludeBundle all
+ * @deprecated 6.1 use `WoltLabSuite/Core/Components/User/RecentActivity/Loader` instead
  */
 import { AjaxCallbackObject, AjaxCallbackSetup } from "../../../Ajax/Data";
 interface AjaxResponse {
