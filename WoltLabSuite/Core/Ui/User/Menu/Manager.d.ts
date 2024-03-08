@@ -8,5 +8,9 @@
  */
 import { UserMenuProvider } from "./Data/Provider";
 export declare function getUserMenuProviders(): ReadonlySet<UserMenuProvider>;
+/**
+ * @since 6.1
+ */
+export declare function updateCounter(identifier: string, counter: number): void;
 export declare function getContainer(): HTMLElement;
 export declare function registerProvider(provider: UserMenuProvider): void;
