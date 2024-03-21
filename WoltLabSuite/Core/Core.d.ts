@@ -46,7 +46,7 @@ export declare function inherit(constructor: new () => any, superConstructor: ne
 /**
  * Returns true if `obj` is an object literal.
  */
-export declare function isPlainObject(obj: unknown): boolean;
+export declare function isPlainObject(obj: unknown): obj is Record<string, unknown>;
 /**
  * Returns the object's class name.
  */

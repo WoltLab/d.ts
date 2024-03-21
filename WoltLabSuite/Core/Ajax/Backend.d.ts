@@ -7,13 +7,15 @@
  * @since 6.0
  */
 declare const enum RequestType {
-    GET = 0,
-    POST = 1
+    DELETE = 0,
+    GET = 1,
+    POST = 2
 }
 type Payload = FormData | Record<string, unknown>;
 declare class SetupRequest {
     private readonly url;
     constructor(url: string);
+    delete(): BackendRequest;
     get(): GetRequest;
     post(payload?: Payload): BackendRequest;
 }
