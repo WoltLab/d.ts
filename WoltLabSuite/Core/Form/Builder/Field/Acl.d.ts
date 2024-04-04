@@ -8,9 +8,7 @@
  */
 import Field from "./Field";
 import { FormBuilderData } from "../Data";
-interface AclList {
-    getData: () => object;
-}
+import AclList from "WoltLabSuite/Core/Ui/Acl/List";
 declare class Acl extends Field {
     protected _aclList: AclList;
     protected _getData(): FormBuilderData;
