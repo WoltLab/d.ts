@@ -14,6 +14,7 @@
  */
 import type { CKEditor5 } from "@woltlab/editor";
 import { Features } from "./Ckeditor/Configuration";
+import { WoltlabSmileyItem } from "@woltlab/editor/plugins/ckeditor5-woltlab-smiley";
 declare class Ckeditor {
     #private;
     constructor(editor: CKEditor5.ClassicEditor.ClassicEditor, features: Features);
@@ -36,7 +37,7 @@ type WoltlabBbcodeItem = {
     name: string;
     label: string;
 };
-export declare function setupCkeditor(element: HTMLElement, features: Features, bbcodes: WoltlabBbcodeItem[], codeBlockLanguages: CKEditor5.CodeBlock.CodeBlockConfig["languages"], licenseKey: string): Promise<CKEditor>;
+export declare function setupCkeditor(element: HTMLElement, features: Features, bbcodes: WoltlabBbcodeItem[], smileys: WoltlabSmileyItem[], codeBlockLanguages: CKEditor5.CodeBlock.CodeBlockConfig["languages"], licenseKey: string): Promise<CKEditor>;
 export declare function getCkeditor(element: HTMLElement): CKEditor | undefined;
 export declare function getCkeditorById(id: string, throwIfNotExists?: boolean): Ckeditor | undefined;
 export type CKEditor = InstanceType<typeof Ckeditor>;
