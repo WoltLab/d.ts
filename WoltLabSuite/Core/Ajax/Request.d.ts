@@ -14,7 +14,6 @@ import { RequestOptions, RequestData, AjaxResponseException } from "./Data";
 declare class AjaxRequest {
     private readonly _options;
     private readonly _data;
-    private _previousXhr?;
     private _xhr?;
     constructor(options: RequestOptions);
     /**
@@ -52,10 +51,8 @@ declare class AjaxRequest {
     getErrorHtml(data: AjaxResponseException | null, xhr: XMLHttpRequest): string | HTMLIFrameElement | null;
     /**
      * Finalizes a request.
-     *
-     * @param  {Object}  options    request options
      */
-    _finalize(options: RequestOptions): void;
+    _finalize(xhr: XMLHttpRequest, options: RequestOptions): void;
     private getContentType;
 }
 export = AjaxRequest;
