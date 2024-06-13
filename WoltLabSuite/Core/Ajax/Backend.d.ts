@@ -11,7 +11,7 @@ declare const enum RequestType {
     GET = 1,
     POST = 2
 }
-type Payload = FormData | Record<string, unknown>;
+type Payload = Blob | FormData | Record<string, unknown>;
 declare class SetupRequest {
     private readonly url;
     constructor(url: string);
@@ -24,6 +24,7 @@ declare class BackendRequest {
     constructor(url: string, type: RequestType, payload?: Payload);
     getAbortController(): AbortController;
     disableLoadingIndicator(): this;
+    withHeader(key: string, value: string): this;
     protected allowCaching(): this;
     fetchAsJson(): Promise<unknown>;
     fetchAsResponse(): Promise<Response | undefined>;

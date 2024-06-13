@@ -14,8 +14,9 @@ declare const _default: {
     /**
      * Initializes the user object.
      */
-    init(userId: number, username: string, link: string): void;
+    init(userId: number, username: string, link: string, guestTokenDialogEndpoint?: string): void;
     readonly userId: number;
     readonly username: string;
+    readonly guestTokenDialogEndpoint: string;
 };
 export = _default;

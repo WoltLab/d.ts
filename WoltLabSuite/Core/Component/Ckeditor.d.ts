@@ -25,7 +25,7 @@ declare class Ckeditor {
     insertHtml(html: string): void;
     insertText(text: string): void;
     isVisible(): boolean;
-    setHtml(html: string): void;
+    setHtml(html: string, focusEditor?: boolean): void;
     removeAll(model: string, attributes: Record<string, string | number | boolean>): void;
     reset(): void;
     get element(): HTMLElement;

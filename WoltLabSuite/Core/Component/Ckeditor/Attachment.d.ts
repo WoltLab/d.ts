@@ -7,7 +7,7 @@
  * @since 6.0
  * @woltlabExcludeBundle tiny
  */
-type AttachmentData = {
+export type AttachmentData = {
     attachmentId: number;
     url: string;
 };
@@ -24,4 +24,3 @@ export type RemoveAttachmentPayload = {
     attachmentId: number;
 };
 export declare function setup(element: HTMLElement): void;
-export {};

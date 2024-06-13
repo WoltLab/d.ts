@@ -16,7 +16,7 @@ export declare class ApiError {
     constructor(type: RequestFailureType, code: string, message: string, param: string, statusCode: number);
     getValidationError(): ValidationError | undefined;
 }
-declare class ValidationError {
+export declare class ValidationError {
     readonly code: string;
     readonly message: string;
     readonly param: string;
