@@ -6,7 +6,7 @@
  * @license GNU Lesser General Public License <http://opensource.org/licenses/lgpl-license.php>
  * @since 6.0
  */
-type CallbackInsertComment = (template: string) => void;
+type CallbackInsertComment = (commentId: number) => void;
 export declare class CommentAdd {
     #private;
     constructor(container: HTMLElement, objectTypeId: number, objectId: number, callback: CallbackInsertComment);
