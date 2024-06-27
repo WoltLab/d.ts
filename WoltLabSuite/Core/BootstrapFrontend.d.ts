@@ -11,6 +11,11 @@ interface BootstrapOptions {
         url: string;
         force: boolean;
     };
+    serviceWorker?: {
+        publicKey: string;
+        serviceWorkerJsUrl: string;
+        registerUrl: string;
+    };
     dynamicColorScheme: boolean;
     endpointUserPopover: string;
     executeCronjobs: string | undefined;

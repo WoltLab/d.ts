@@ -32,16 +32,16 @@ interface AjaxResponse extends DatabaseObjectActionResponse {
 }
 declare const _default: {
     new (containerSelector: string, objectTypeID: number, categoryName: string | undefined, objectID: number, includeUserGroups: boolean, initialPermissions: AjaxResponse | undefined, aclValuesFieldName: string | undefined): {
-        readonly "__#46@#categoryName": string | undefined;
-        readonly "__#46@#container": HTMLElement;
-        readonly "__#46@#aclList": HTMLUListElement;
-        readonly "__#46@#permissionList": HTMLDivElement;
-        readonly "__#46@#searchInput": HTMLInputElement;
-        readonly "__#46@#objectID": number;
-        readonly "__#46@#objectTypeID": number;
-        readonly "__#46@#aclValuesFieldName": string;
-        readonly "__#46@#search": UiUserSearchInput;
-        "__#46@#values": {
+        readonly "__#47@#categoryName": string | undefined;
+        readonly "__#47@#container": HTMLElement;
+        readonly "__#47@#aclList": HTMLUListElement;
+        readonly "__#47@#permissionList": HTMLDivElement;
+        readonly "__#47@#searchInput": HTMLInputElement;
+        readonly "__#47@#objectID": number;
+        readonly "__#47@#objectTypeID": number;
+        readonly "__#47@#aclValuesFieldName": string;
+        readonly "__#47@#search": UiUserSearchInput;
+        "__#47@#values": {
             [key: string]: {
                 [key: string]: {
                     [key: string]: number;
@@ -57,18 +57,18 @@ declare const _default: {
         };
         addObject(selectedItem: HTMLLIElement): boolean;
         submit(): void;
-        "__#46@#reset"(): void;
-        "__#46@#loadACL"(): void;
-        "__#46@#createListItem"(objectID: string, label: string, type: string): HTMLLIElement;
-        "__#46@#removeItem"(listItem: HTMLLIElement): void;
-        "__#46@#selectFirstEntry"(): void;
-        "__#46@#success"(data: AjaxResponse): void;
-        "__#46@#parseData"(data: AjaxResponse, type: string): void;
-        "__#46@#select"(listItem: HTMLElement, savePermissions: boolean): void;
-        "__#46@#change"(event: MouseEvent): void;
-        "__#46@#setupPermissions"(type: string, objectID: string): void;
-        "__#46@#savePermissions"(): void;
-        "__#46@#save"(type: string): void;
+        "__#47@#reset"(): void;
+        "__#47@#loadACL"(): void;
+        "__#47@#createListItem"(objectID: string, label: string, type: string): HTMLLIElement;
+        "__#47@#removeItem"(listItem: HTMLLIElement): void;
+        "__#47@#selectFirstEntry"(): void;
+        "__#47@#success"(data: AjaxResponse): void;
+        "__#47@#parseData"(data: AjaxResponse, type: string): void;
+        "__#47@#select"(listItem: HTMLElement, savePermissions: boolean): void;
+        "__#47@#change"(event: MouseEvent): void;
+        "__#47@#setupPermissions"(type: string, objectID: string): void;
+        "__#47@#savePermissions"(): void;
+        "__#47@#save"(type: string): void;
     };
 };
 export = _default;
