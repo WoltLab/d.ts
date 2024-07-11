@@ -11,5 +11,6 @@ type ThumbnailData = {
     link: string;
 };
 type GenerateThumbnailsResponse = ThumbnailData[];
+export declare function clearPreviousErrors(element: WoltlabCoreFileUploadElement): void;
 export declare function setup(): void;
 export {};
