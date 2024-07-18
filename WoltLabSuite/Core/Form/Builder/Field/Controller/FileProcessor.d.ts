@@ -12,9 +12,8 @@ export interface ExtraButton {
 }
 export declare class FileProcessor {
     #private;
-    constructor(fieldId: string, singleFileUpload?: boolean, imageOnly?: boolean, extraButtons?: ExtraButton[]);
+    constructor(fieldId: string, singleFileUpload?: boolean, useBigPreview?: boolean, extraButtons?: ExtraButton[]);
     get classPrefix(): string;
-    get showBigPreview(): boolean;
     protected addButtons(container: HTMLElement, element: WoltlabCoreFileElement): void;
     protected getDeleteButton(element: WoltlabCoreFileElement): HTMLButtonElement;
     protected getReplaceButton(element: WoltlabCoreFileElement): HTMLButtonElement;
