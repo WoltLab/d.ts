@@ -16,6 +16,7 @@ export declare class WoltlabCoreFileElement extends HTMLElement {
     get fileId(): number | undefined;
     get iconName(): string | undefined;
     get previewUrl(): string | undefined;
+    set previewUrl(previewUrl: string);
     get unbounded(): boolean;
     set unbounded(unbounded: boolean);
     get filename(): string | undefined;
