@@ -7,7 +7,6 @@
  * @woltlabExcludeBundle all
  * @deprecated 6.0 This feature is discontinued, opening Google Maps in a separate window already offers a route planer.
  */
-/// <reference types="google.maps" />
 import { DialogCallbackObject, DialogCallbackSetup } from "../../../Ui/Dialog/Data";
 interface LocationData {
     label?: string;
