@@ -11,4 +11,5 @@ export declare class CommentAdd {
     #private;
     constructor(container: HTMLElement, objectTypeId: number, objectId: number, callback: CallbackInsertComment);
 }
+export declare function setCommentEditorFeatures(textarea: HTMLTextAreaElement): void;
 export {};
