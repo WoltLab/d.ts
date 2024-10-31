@@ -6,5 +6,6 @@
  * @woltlabExcludeBundle tiny
  */
 export declare function serviceWorkerSupported(): boolean;
-export declare function setup(publicKey: string, serviceWorkerJsUrl: string, registerUrl: string): void;
+export declare function setup(publicKey: string, serviceWorkerJsUrl: string, registerUrl: string, notificationLastReadTime: number): void;
 export declare function registerServiceWorker(): void;
+export declare function updateNotificationLastReadTime(timestamp?: number): void;

@@ -15,6 +15,7 @@ interface BootstrapOptions {
         publicKey: string;
         serviceWorkerJsUrl: string;
         registerUrl: string;
+        notificationLastReadTime: number;
     };
     dynamicColorScheme: boolean;
     endpointUserPopover: string;
