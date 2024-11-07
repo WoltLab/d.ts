@@ -6,7 +6,6 @@
  * @license GNU Lesser General Public License <http://opensource.org/licenses/lgpl-license.php>
  * @since 6.0
  */
-/// <reference types="google.maps" />
 type Bounds = {
     southWest: {
         latitude: number;
