@@ -6,7 +6,8 @@ export declare class AcpUiDataImportManager implements AjaxCallbackObject {
     private readonly redirectUrl;
     private currentAction;
     private index;
-    constructor(queue: string[], redirectUrl: string);
+    private cacheClearEndpoint;
+    constructor(queue: string[], redirectUrl: string, cacheClearEndpoint: string);
     private invoke;
     private run;
     private showCompletedDialog;

@@ -19,6 +19,6 @@
     "qr-creator": "^1.0.0",
     "reflect-metadata": "^0.2.2",
     "tabbable": "^6.2.0",
-    "tslib": "^2.7.0"
+    "tslib": "^2.8.1"
   }
 }
