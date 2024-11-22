@@ -8,5 +8,5 @@
 import WoltlabCoreGoogleMapsElement from "./woltlab-core-google-maps";
 import "./woltlab-core-google-maps";
 export declare function addMarker(element: WoltlabCoreGoogleMapsElement, latitude: number, longitude: number, title: string, focus?: boolean): Promise<void>;
-export declare function addDraggableMarker(element: WoltlabCoreGoogleMapsElement): Promise<google.maps.Marker>;
-export declare function addDraggableMarker(element: WoltlabCoreGoogleMapsElement, latitude: number, longitude: number): Promise<google.maps.Marker>;
+export declare function addDraggableMarker(element: WoltlabCoreGoogleMapsElement): Promise<google.maps.marker.AdvancedMarkerElement>;
+export declare function addDraggableMarker(element: WoltlabCoreGoogleMapsElement, latitude: number, longitude: number): Promise<google.maps.marker.AdvancedMarkerElement>;
