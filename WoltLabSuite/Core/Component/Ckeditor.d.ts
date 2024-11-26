@@ -19,7 +19,7 @@ declare class Ckeditor {
     constructor(editor: CKEditor5.ClassicEditor.ClassicEditor, features: Features);
     destroy(): Promise<void>;
     discardDraft(): void;
-    focus(): void;
+    focus(scrollIntoView?: boolean): void;
     getHtml(): string;
     insertHtml(html: string): void;
     insertText(text: string): void;
