@@ -7,6 +7,9 @@
  * @woltlabExcludeBundle all
  */
 import { AjaxCallbackObject, AjaxCallbackSetup, ResponseData } from "../../../../../Ajax/Data";
+/**
+ * @deprecated 6.2 No longer in use.
+ */
 declare abstract class UiUserProfileMenuItemAbstract implements AjaxCallbackObject {
     protected readonly _button: HTMLAnchorElement;
     protected _isActive: boolean;
