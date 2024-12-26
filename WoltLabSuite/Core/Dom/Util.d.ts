@@ -28,6 +28,18 @@ declare const DomUtil: {
      */
     identify(element: Element): string;
     /**
+     * Returns the inner height of an element including paddings.
+     */
+    innerHeight(element: HTMLElement, styles?: CSSStyleDeclaration): number;
+    /**
+     * Returns the inner width of an element including paddings.
+     */
+    innerWidth(element: HTMLElement, styles?: CSSStyleDeclaration): number;
+    /**
+     * Returns the inner dimensions of an element including paddings.
+     */
+    innerDimensions(element: HTMLElement): Dimensions;
+    /**
      * Returns the outer height of an element including margins.
      */
     outerHeight(element: HTMLElement, styles?: CSSStyleDeclaration): number;
