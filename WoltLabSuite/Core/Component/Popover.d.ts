@@ -8,7 +8,7 @@
  * @since 6.1
  */
 type Configuration = {
-    endpoint: string;
+    endpoint: string | ((objectId: number) => Promise<string>);
     identifier: string;
     selector: string;
 };

@@ -9,7 +9,7 @@
 type ObjectId = number;
 export declare class SharedCache {
     #private;
-    constructor(endpoint: string);
+    constructor(endpoint: string | ((objectId: number) => Promise<string>));
     get(objectId: ObjectId): Promise<string>;
     reset(objectId: ObjectId): void;
 }
