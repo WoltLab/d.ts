@@ -31,7 +31,7 @@ export declare class PageMenuMain implements PageMenuProvider {
     private buildMenuItem;
     private toggleList;
     private refreshUnreadIndicator;
-    private refreshUnreadBage;
+    private refreshUnreadBadge;
     private updateOverflowIndicator;
 }
 export default PageMenuMain;

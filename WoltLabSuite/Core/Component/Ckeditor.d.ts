@@ -31,6 +31,7 @@ declare class Ckeditor {
     get element(): HTMLElement;
     get features(): Features;
     get sourceElement(): HTMLElement;
+    get focusTracker(): CKEditor5.Utils.FocusTracker;
 }
 type WoltlabBbcodeItem = {
     icon: string;
