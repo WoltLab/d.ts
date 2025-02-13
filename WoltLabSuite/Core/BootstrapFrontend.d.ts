@@ -22,6 +22,8 @@ interface BootstrapOptions {
     executeCronjobs: string | undefined;
     shareButtonProviders?: ShareProvider[];
     styleChanger: boolean;
+    removeQuotes?: string[];
+    usedQuotes?: Map<string, string[]>;
 }
 /**
  * Bootstraps general modules and frontend exclusive ones.
