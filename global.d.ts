@@ -51,7 +51,6 @@ declare global {
     __wcf_bc_colorUtil: typeof ColorUtil;
     __wcf_bc_datePicker: typeof DatePicker;
     __wcf_bc_eventHandler: typeof EventHandler;
-    __wcf_bc_getPageOverlayContainer: () => HTMLElement;
 
     WoltLabLanguage: {
       getPhrase(key: string, parameters?: object): string;
