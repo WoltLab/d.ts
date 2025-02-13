@@ -6,5 +6,4 @@ type Callback = () => void;
  * @param       {function=}     callback        callback invoked once scrolling has ended
  */
 export declare function element(element: HTMLElement, callback?: Callback, behavior?: ScrollBehavior): void;
-export declare function isCurrentlyScrolling(): boolean;
 export {};

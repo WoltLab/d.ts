@@ -15,6 +15,5 @@ interface NotificationHandlerOptions {
  */
 export declare function setup(options: NotificationHandlerOptions): void;
 export declare function enableNotifications(): void;
-export declare function updateLastRequestTimestamp(timestamp: number): void;
 export declare function poll(): void;
 export {};
