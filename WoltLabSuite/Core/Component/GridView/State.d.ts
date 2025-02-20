@@ -22,6 +22,7 @@ export declare class State extends EventTarget {
     updateFromResponse(cause: StateChangeCause, count: number, filterLabels: ArrayLike<string>): void;
     setBulkInteractionContextMenuOptions(options: string): void;
     resetSelection(): void;
+    refreshSelection(): void;
 }
 interface StateEventMap {
     "grid-view:change": CustomEvent<{

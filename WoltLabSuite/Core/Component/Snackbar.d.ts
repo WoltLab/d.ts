@@ -29,7 +29,14 @@ interface Snackbar extends EventTarget {
         <T extends keyof SnackbarEventMap>(type: T, listener: (this: Snackbar, ev: SnackbarEventMap[T]) => any, options?: boolean | AddEventListenerOptions): void;
     } & HTMLElement["addEventListener"];
 }
+declare class SnackbarProgress {
+    #private;
+    constructor(label: string, length: number);
+    setIteration(iteration: number): void;
+    markAsDone(): void;
+    get element(): Snackbar;
+}
 export declare function showSuccessSnackbar(message: string): Snackbar;
-export declare function showProgressSnackbar(message: string): Snackbar;
+export declare function showProgressSnackbar(label: string, length: number): SnackbarProgress;
 export declare function showDefaultSuccessSnackbar(): Snackbar;
 export {};
