@@ -1,0 +1,11 @@
+/**
+ * Sends a get request to the given endpoint.
+ *
+ * @author Marcel Werk
+ * @copyright 2001-2025 WoltLab GmbH
+ * @license GNU Lesser General Public License <http://opensource.org/licenses/lgpl-license.php>
+ * @since 6.2
+ * @woltlabExcludeBundle tiny
+ */
+import { ApiResult } from "./Result";
+export declare function getObject<T = unknown>(endpoint: string): Promise<ApiResult<T>>;

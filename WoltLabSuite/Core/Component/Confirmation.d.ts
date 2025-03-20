@@ -34,9 +34,9 @@ declare class ConfirmationPrefab {
     delete(title?: string): Promise<boolean>;
     restore(title?: string): Promise<boolean>;
     softDelete(): Promise<ResultSoftDeleteWithoutReason>;
-    softDelete(title: string): Promise<ResultSoftDeleteWithoutReason>;
-    softDelete(title: string, askForReason: false): Promise<ResultSoftDeleteWithoutReason>;
-    softDelete(title: string, askForReason: true): Promise<ResultConfirmationWithReason>;
+    softDelete(title: string | undefined): Promise<ResultSoftDeleteWithoutReason>;
+    softDelete(title: string | undefined, askForReason: false): Promise<ResultSoftDeleteWithoutReason>;
+    softDelete(title: string | undefined, askForReason: true): Promise<ResultConfirmationWithReason>;
     withReason(question: string, isOptional: boolean): Promise<ResultConfirmationWithReason>;
 }
 export declare function confirmationFactory(): ConfirmationPrefab;

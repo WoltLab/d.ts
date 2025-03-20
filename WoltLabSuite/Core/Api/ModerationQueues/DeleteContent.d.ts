@@ -8,4 +8,4 @@
  * @woltlabExcludeBundle tiny
  */
 import { ApiResult } from "../Result";
-export declare function deleteContent(queueId: number, message: string): Promise<ApiResult<[]>>;
+export declare function deleteContent(queueId: number, reason: string): Promise<ApiResult<[]>>;
