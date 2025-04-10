@@ -12,6 +12,7 @@ export declare enum ConfirmationType {
     SoftDeleteWithReason = "SoftDeleteWithReason",
     Restore = "Restore",
     Delete = "Delete",
+    Disable = "Disable",
     Custom = "Custom"
 }
 type ResultConfirmationWithReason = {
