@@ -6,6 +6,4 @@
  *
  * @woltlabExcludeBundle all
  */
-import { I18n } from "emoji-picker-element/shared";
-export declare function getLocalizationData(localization: string): I18n;
 export declare function getDataSource(locale: string): string;

@@ -9,11 +9,13 @@
  */
 import DialogControls from "./Controls";
 import FormBuilderSetup from "../FormBuilder/Setup";
+import GridViewSetup from "WoltLabSuite/Core/Component/GridView/Setup";
 export declare class DialogSetup {
     fromElement(element: HTMLElement | DocumentFragment): DialogControls;
     fromId(id: string): DialogControls;
     fromHtml(html: string): DialogControls;
     usingFormBuilder(): FormBuilderSetup;
+    usingGridView(): GridViewSetup;
     withoutContent(): DialogControls;
 }
 export default DialogSetup;

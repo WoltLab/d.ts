@@ -27,6 +27,7 @@ export declare class UiSearchExtended {
     private getFormData;
     private initQueryString;
     private initPagination;
+    private getPaginationUrl;
     private changePage;
     private removeSearchResults;
     private showSearchResults;

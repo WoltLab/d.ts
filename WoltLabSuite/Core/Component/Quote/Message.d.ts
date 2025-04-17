@@ -10,4 +10,5 @@
 import { CKEditor } from "WoltLabSuite/Core/Component/Ckeditor";
 export declare function registerContainer(containerSelector: string, messageBodySelector: string, className: string, objectType: string): void;
 export declare function setActiveEditor(editor?: CKEditor, supportDirectInsert?: boolean): void;
+export declare function removeActiveEditor(editorSource: HTMLElement): void;
 export declare function removeQuoteStatus(key: string): void;
