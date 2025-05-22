@@ -7,20 +7,15 @@
  * @woltlabExcludeBundle all
  */
 import { AjaxCallbackObject, AjaxCallbackSetup, DatabaseObjectActionResponse } from "../../../Ajax/Data";
-import { DialogCallbackObject, DialogCallbackSetup } from "../../Dialog/Data";
-declare class UiUserTrophyList implements AjaxCallbackObject, DialogCallbackObject {
+declare class UiUserTrophyList implements AjaxCallbackObject {
+    #private;
     private readonly cache;
     private currentPageNo;
     private currentUser;
-    private readonly knownElements;
     /**
      * Initializes the user trophy list.
      */
     constructor();
-    /**
-     * Adds event userTrophyOverlayList elements.
-     */
-    private rebuild;
     /**
      * Opens the user trophy list for a specific user.
      */
@@ -31,7 +26,6 @@ declare class UiUserTrophyList implements AjaxCallbackObject, DialogCallbackObje
     private showPage;
     _ajaxSuccess(data: AjaxResponse): void;
     _ajaxSetup(): ReturnType<AjaxCallbackSetup>;
-    _dialogSetup(): ReturnType<DialogCallbackSetup>;
 }
 export = UiUserTrophyList;
 interface AjaxResponse extends DatabaseObjectActionResponse {
