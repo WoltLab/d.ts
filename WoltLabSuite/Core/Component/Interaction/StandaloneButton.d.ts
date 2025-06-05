@@ -8,5 +8,5 @@
  */
 export declare class StandaloneButton {
     #private;
-    constructor(container: HTMLElement, providerClassName: string, objectId: string | number, redirectUrl: string);
+    constructor(container: HTMLElement, providerClassName: string, objectId: string | number, redirectUrl: string, reloadHeaderEndpoint: string);
 }

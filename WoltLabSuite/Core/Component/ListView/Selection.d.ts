@@ -18,6 +18,7 @@ interface SelectionEventMap {
     "list-view:get-bulk-interactions": CustomEvent<{
         objectIds: number[];
     }>;
+    "list-view:update-selection": CustomEvent<void>;
 }
 export interface Selection extends EventTarget {
     addEventListener: {
