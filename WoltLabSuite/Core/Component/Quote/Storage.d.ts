@@ -34,5 +34,6 @@ export declare function markQuoteAsUsed(editorId: string, uuid: string): void;
 export declare function getUsedQuotes(editorId: string): Set<string>;
 export declare function clearQuotesForEditor(editorId: string): void;
 export declare function isFullQuoted(objectType: string, objectId: number): boolean;
+export declare function getFullQuoteUuid(objectType: string, objectId: number): string | undefined;
 export declare function getKey(objectType: string, objectId: number): string;
 export {};

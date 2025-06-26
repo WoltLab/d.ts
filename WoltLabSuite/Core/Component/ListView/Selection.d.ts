@@ -9,6 +9,7 @@
 export declare class Selection extends EventTarget {
     #private;
     constructor(viewId: string, viewElement: HTMLElement);
+    selectionBarVisible(): boolean;
     refresh(): void;
     getSelectedIds(): number[];
     setBulkInteractionContextMenuOptions(options: string): void;
