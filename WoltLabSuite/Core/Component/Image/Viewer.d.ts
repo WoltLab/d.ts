@@ -1,6 +1,10 @@
-import { Fancybox } from "@fancyapps/ui";
-import { userSlideType } from "@fancyapps/ui/types/Carousel/types";
+/**
+ * @author Olaf Braun
+ * @copyright 2001-2025 WoltLab GmbH
+ * @license GNU Lesser General Public License <http://opensource.org/licenses/lgpl-license.php>
+ */
+import { CarouselSlide, FancyboxInstance } from "@fancyapps/ui";
 export declare function setup(): void;
 export declare function setupLegacy(): void;
-export declare function createFancybox(userSlides?: Array<userSlideType>): Promise<Fancybox>;
-export declare function getLocalization(): Promise<Record<string, string>>;
+export declare function showFancybox(userSlides?: Array<CarouselSlide>): FancyboxInstance;
+export declare function getLocalization(): Record<string, string>;

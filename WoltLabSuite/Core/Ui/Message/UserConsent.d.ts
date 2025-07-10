@@ -6,3 +6,4 @@
  * @license     GNU Lesser General Public License <http://opensource.org/licenses/lgpl-license.php>
  */
 export declare function init(): void;
+export declare function allExternalMediaEnabled(): boolean;
