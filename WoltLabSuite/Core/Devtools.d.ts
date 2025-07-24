@@ -23,6 +23,10 @@ declare const Devtools: {
      */
     toggleEventLogging(forceEnable: boolean): void;
     /**
+     * Enables/disables persistent popovers that do not disappear on mouseout.
+     */
+    togglePersistentPopover(forceEnable: boolean): void;
+    /**
      * Internal methods not meant to be called directly.
      */
     _internal_: {
@@ -30,6 +34,7 @@ declare const Devtools: {
         editorAutosave(): boolean;
         editorInspector(): boolean;
         eventLog(identifier: string, action: string): void;
+        persistentPopover(): boolean;
     };
 };
 export = Devtools;

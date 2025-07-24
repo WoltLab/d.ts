@@ -28,10 +28,25 @@ export declare class WoltlabCoreFileElement extends HTMLElement {
     uploadFailed(apiError: ApiError): void;
     uploadCompleted(fileId: number, mimeType: string, link: string, data: Record<string, unknown>, hasThumbnails: boolean): void;
     setThumbnails(thumbnails: ThumbnailData[]): void;
+    /**
+     * Updates the filename, file size and mime type. These can change for images
+     * that are being converted to a different file format,
+     *
+     * @internal
+     */
+    updateFileData(filename: string, fileSize: number, mimeType: string): void;
     isFailedUpload(): boolean;
     set thumbnail(thumbnail: Thumbnail);
     get thumbnails(): Thumbnail[];
     get ready(): Promise<void>;
     get apiError(): ApiError | undefined;
+}
+interface WoltlabCoreFileElementEventMap {
+    "file:update-data": CustomEvent<void>;
+}
+export interface WoltlabCoreFileElement extends HTMLElement {
+    addEventListener: {
+        <T extends keyof WoltlabCoreFileElementEventMap>(type: T, listener: (this: Selection, ev: WoltlabCoreFileElementEventMap[T]) => any, options?: boolean | AddEventListenerOptions): void;
+    } & HTMLElement["addEventListener"];
 }
 export default WoltlabCoreFileElement;

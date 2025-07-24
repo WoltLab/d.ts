@@ -10,6 +10,7 @@
  * Extracts the EXIF / XMP sections of a JPEG blob.
  */
 export declare function getExifBytesFromJpeg(blob: Blob | File): Promise<Exif>;
+export declare function getExifBytesFromWebP(blob: Blob | File): Promise<Exif | null>;
 /**
  * Removes all EXIF and XMP sections of a JPEG blob.
  */
