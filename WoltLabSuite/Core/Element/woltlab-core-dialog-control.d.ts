@@ -16,6 +16,7 @@ interface WoltlabCoreDialogControlEventMap {
 }
 export declare class WoltlabCoreDialogControlElement extends HTMLElement {
     #private;
+    constructor();
     set primary(primary: string);
     get primary(): string;
     set cancel(cancel: string | undefined);
