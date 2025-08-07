@@ -9,6 +9,7 @@
 export declare class Selection extends EventTarget {
     #private;
     constructor(gridId: string, table: HTMLTableElement);
+    selectionBarVisible(): boolean;
     refresh(): void;
     getSelectedIds(): number[];
     setBulkInteractionContextMenuOptions(options: string): void;
@@ -18,6 +19,7 @@ interface SelectionEventMap {
     "grid-view:get-bulk-interactions": CustomEvent<{
         objectIds: number[];
     }>;
+    "grid-view:update-selection": CustomEvent<void>;
 }
 export interface Selection extends EventTarget {
     addEventListener: {

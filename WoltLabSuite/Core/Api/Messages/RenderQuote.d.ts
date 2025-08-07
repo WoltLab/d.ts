@@ -10,14 +10,11 @@
 import { ApiResult } from "../Result";
 type Response = {
     objectID: number;
-    authorID: number | null;
     author: string;
-    time: string;
     link: string;
-    title: string;
     avatar: string;
     message: string | null;
     rawMessage: string | null;
 };
-export declare function renderQuote(objectType: string, className: string, objectID: number): Promise<ApiResult<Response>>;
+export declare function renderQuote(objectType: string, objectID: number, isFullQuote: boolean): Promise<ApiResult<Response>>;
 export {};

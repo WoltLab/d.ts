@@ -3,14 +3,13 @@
  *
  * @deprecated 6.2 use `WoltLabSuite/Core/Component/Quote/Message` instead
  */
-export interface WCFMessageQuoteManager {
-    supportPaste: () => boolean;
-    updateCount: (number: any, object: any) => void;
-}
+/**
+ * @deprecated 6.2 Use `registerContainer()` without the className parameter.
+ */
 export declare class UiMessageQuote {
     /**
      * Initializes the quote handler for given object type.
      */
-    constructor(_quoteManager: WCFMessageQuoteManager, className: string, objectType: string, containerSelector: string, messageBodySelector: string, _messageContentSelector: string, _supportDirectInsert: boolean);
+    constructor(_quoteManager: typeof window.WCF.Message.Quote.Manager, className: string, objectType: string, containerSelector: string, messageBodySelector: string, _messageContentSelector: string, _supportDirectInsert: boolean);
 }
 export default UiMessageQuote;
