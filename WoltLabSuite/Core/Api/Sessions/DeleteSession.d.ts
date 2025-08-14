@@ -8,5 +8,4 @@
  * @since 6.1
  * @woltlabExcludeBundle tiny
  */
-import { ApiResult } from "../Result";
-export declare function deleteSession(sessionId: string): Promise<ApiResult<[]>>;
+export declare function deleteSession(sessionId: string): Promise<[]>;

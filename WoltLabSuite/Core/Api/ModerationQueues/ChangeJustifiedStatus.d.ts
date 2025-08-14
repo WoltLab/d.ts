@@ -7,5 +7,4 @@
  * @since 6.2
  * @woltlabExcludeBundle tiny
  */
-import { ApiResult } from "../Result";
-export declare function changeJustifiedStatus(queueId: number, markAsJustified: boolean): Promise<ApiResult<[]>>;
+export declare function changeJustifiedStatus(queueId: number, markAsJustified: boolean): Promise<[]>;

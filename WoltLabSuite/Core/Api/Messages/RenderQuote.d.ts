@@ -7,7 +7,6 @@
  * @since 6.2
  * @woltlabExcludeBundle tiny
  */
-import { ApiResult } from "../Result";
 type Response = {
     objectID: number;
     author: string;
@@ -16,5 +15,5 @@ type Response = {
     message: string | null;
     rawMessage: string | null;
 };
-export declare function renderQuote(objectType: string, objectID: number, isFullQuote: boolean): Promise<ApiResult<Response>>;
+export declare function renderQuote(objectType: string, objectID: number, isFullQuote: boolean): Promise<Response>;
 export {};

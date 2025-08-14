@@ -7,5 +7,4 @@
  * @since 6.2
  * @woltlabExcludeBundle tiny
  */
-import { ApiResult } from "../Result";
-export declare function revertVersion(objectType: string, objectId: number, versionId: number): Promise<ApiResult<[]>>;
+export declare function revertVersion(objectType: string, objectId: number, versionId: number): Promise<[]>;

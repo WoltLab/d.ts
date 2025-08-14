@@ -6,12 +6,11 @@
  * @license GNU Lesser General Public License <http://opensource.org/licenses/lgpl-license.php>
  * @since 6.2
  */
-import { ApiResult } from "../Result";
 type Response = {
     template: string;
     pages: number;
     totalRows: number;
     filterLabels: ArrayLike<string>;
 };
-export declare function getRows(gridViewClass: string, pageNo: number, sortField?: string, sortOrder?: string, filters?: Map<string, string>, gridViewParameters?: Map<string, string>): Promise<ApiResult<Response>>;
+export declare function getRows(gridViewClass: string, pageNo: number, sortField?: string, sortOrder?: string, filters?: Map<string, string>, gridViewParameters?: Map<string, string>): Promise<Response>;
 export {};

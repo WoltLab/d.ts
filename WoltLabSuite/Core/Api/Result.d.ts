@@ -22,3 +22,9 @@ export type ApiResult<T> = {
 export declare function apiResultFromValue<T>(value: T): ApiResult<T>;
 export declare function apiResultFromError(error: Error): Promise<ApiResult<never>>;
 export declare function apiResultFromStatusNotOk(e: StatusNotOk): Promise<ApiResult<never>>;
+/**
+ * Helper method for API requests that are expected to never fail. Infallible
+ * requests are those that should only fail if there is an unexpected server
+ * error or if the request was the result of a bug in the client.
+ */
+export declare function fromInfallibleApiRequest<T = unknown>(request: () => Promise<unknown>): Promise<T>;

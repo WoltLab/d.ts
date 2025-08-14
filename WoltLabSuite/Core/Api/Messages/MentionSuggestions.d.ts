@@ -7,7 +7,6 @@
  * @since 6.1
  * @woltlabExcludeBundle tiny
  */
-import { ApiResult } from "../Result";
 type Item = {
     avatarTag: string;
     username: string;
@@ -19,5 +18,5 @@ type Item = {
     type: "group";
 };
 type Response = Item[];
-export declare function mentionSuggestions(query: string): Promise<ApiResult<Response>>;
+export declare function mentionSuggestions(query: string): Promise<Response>;
 export {};

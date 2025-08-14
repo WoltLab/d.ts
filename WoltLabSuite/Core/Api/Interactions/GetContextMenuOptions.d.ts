@@ -6,9 +6,8 @@
  * @license GNU Lesser General Public License <http://opensource.org/licenses/lgpl-license.php>
  * @since 6.2
  */
-import { ApiResult } from "../Result";
 type Response = {
     template: string;
 };
-export declare function getContextMenuOptions(providerClassName: string, objectId: number | string): Promise<ApiResult<Response>>;
+export declare function getContextMenuOptions(providerClassName: string, objectId: number | string): Promise<Response>;
 export {};

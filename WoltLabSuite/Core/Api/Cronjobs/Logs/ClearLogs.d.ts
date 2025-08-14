@@ -7,5 +7,4 @@
  * @since 6.2
  * @woltlabExcludeBundle tiny
  */
-import { ApiResult } from "../../Result";
-export declare function clearLogs(): Promise<ApiResult<[]>>;
+export declare function clearLogs(): Promise<[]>;
