@@ -6,4 +6,8 @@
  * @license  GNU Lesser General Public License <http://opensource.org/licenses/lgpl-license.php>
  * @since 6.2
  */
-export declare function getArticlePopover(articleId: number): Promise<string>;
+type Response = {
+    template: string;
+};
+export declare function getArticlePopover(articleId: number): Promise<Response>;
+export {};
