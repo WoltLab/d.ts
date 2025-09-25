@@ -13,7 +13,7 @@ export declare const enum StateChangeCause {
 }
 export declare class State extends EventTarget {
     #private;
-    constructor(gridId: string, table: HTMLTableElement, pageNo: number, baseUrl: string, sortField: string, sortOrder: string);
+    constructor(gridId: string, table: HTMLTableElement, pageNo: number, baseUrl: string, sortField: string, sortOrder: string, defaultSortField: string, defaultSortOrder: string);
     getPageNo(): number;
     getSortField(): string;
     getSortOrder(): string;

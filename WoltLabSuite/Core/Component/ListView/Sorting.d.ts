@@ -8,7 +8,7 @@
  */
 export declare class Sorting extends EventTarget {
     #private;
-    constructor(dropdownMenu: HTMLElement | undefined, sortField: string, sortOrder: string);
+    constructor(dropdownMenu: HTMLElement | undefined, sortField: string, sortOrder: string, defaultSortField: string, defaultSortOrder: string);
     getSortField(): string;
     getSortOrder(): string;
     getQueryParameters(): [string, string][];

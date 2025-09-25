@@ -8,7 +8,7 @@
  */
 export declare class Sorting extends EventTarget {
     #private;
-    constructor(table: HTMLTableElement, sortField: string, sortOrder: string);
+    constructor(table: HTMLTableElement, sortField: string, sortOrder: string, defaultSortField: string, defaultSortOrder: string);
     getSortField(): string;
     getSortOrder(): string;
     getQueryParameters(): [string, string][];

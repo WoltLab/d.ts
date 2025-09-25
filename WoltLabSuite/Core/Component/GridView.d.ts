@@ -8,5 +8,5 @@
  */
 export declare class GridView {
     #private;
-    constructor(gridId: string, gridClassName: string, pageNo: number, baseUrl: string | undefined, sortField: string | undefined, sortOrder: string | undefined, bulkInteractionProviderClassName: string, gridViewParameters?: Map<string, string>);
+    constructor(gridId: string, gridClassName: string, pageNo: number, baseUrl: string | undefined, sortField: string | undefined, sortOrder: string | undefined, defaultSortField: string | undefined, defaultSortOrder: string | undefined, bulkInteractionProviderClassName: string, gridViewParameters?: Map<string, string>);
 }
