@@ -14,7 +14,7 @@
  */
 import type { CKEditor5 } from "@woltlab/editor";
 import { Features } from "./Ckeditor/Configuration";
-import { WoltlabSmileyItem } from "@woltlab/editor/plugins/ckeditor5-woltlab-smiley";
+import type { WoltlabSmileyItem } from "@woltlab/editor/plugins/ckeditor5-woltlab-smiley";
 declare class Ckeditor {
     #private;
     constructor(editor: CKEditor5.ClassicEditor.ClassicEditor, features: Features);
