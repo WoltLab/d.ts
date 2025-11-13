@@ -8,11 +8,6 @@
  */
 type CallbackSelect = (icon: string, forceSolid: boolean) => void;
 /**
- * Sets the list of available icons, must be invoked prior to any call
- * to the `open()` method.
- */
-export declare function setup(): void;
-/**
  * Shows the FontAwesome selection dialog, supplied callback will be
  * invoked with the selection icon's name as the only argument.
  */
