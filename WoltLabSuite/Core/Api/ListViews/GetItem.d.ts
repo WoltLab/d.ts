@@ -9,5 +9,5 @@
 type Response = {
     template: string;
 };
-export declare function getItem(listViewClass: string, objectId: string | number, listViewParameters?: Map<string, string>): Promise<Response>;
+export declare function getItem(listViewClass: string, objectId: string | number, filters?: Map<string, string>, listViewParameters?: Map<string, string>): Promise<Response>;
 export {};

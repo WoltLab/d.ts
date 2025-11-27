@@ -14,6 +14,7 @@ export declare class Selection extends EventTarget {
     getSelectedIds(): number[];
     setBulkInteractionContextMenuOptions(options: string): void;
     resetSelection(): void;
+    removeSelection(objectId: number): void;
 }
 interface SelectionEventMap {
     "list-view:get-bulk-interactions": CustomEvent<{

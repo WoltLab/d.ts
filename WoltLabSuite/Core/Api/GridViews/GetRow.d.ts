@@ -9,5 +9,5 @@
 type Response = {
     template: string;
 };
-export declare function getRow(gridViewClass: string, objectId: string | number, gridViewParameters?: Map<string, string>): Promise<Response>;
+export declare function getRow(gridViewClass: string, objectId: string | number, filters?: Map<string, string>, gridViewParameters?: Map<string, string>): Promise<Response>;
 export {};
