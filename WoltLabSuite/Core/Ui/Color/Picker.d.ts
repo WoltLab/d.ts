@@ -13,6 +13,7 @@ type CallbackSubmit = (data: ColorUtil.RGBA) => void;
 declare const enum ColorSource {
     HEX = "hex",
     HSL = "hsl",
+    Opacity = "opacity",
     RGBA = "rgba",
     Setup = "setup"
 }
@@ -28,6 +29,7 @@ declare class UiColorPicker implements DialogCallbackObject {
     private hslContainer?;
     protected readonly input: HTMLInputElement;
     protected newColor?: HTMLElement;
+    protected opacityInput: HTMLInputElement | null;
     protected oldColor?: HTMLElement;
     protected readonly options: ColorPickerOptions;
     /**
@@ -55,6 +57,7 @@ declare class UiColorPicker implements DialogCallbackObject {
      * @since 5.5
      */
     protected updateColorFromHex(event: Event): void;
+    protected setOpacity(event: Event): void;
     /**
      * Returns the current RGBA color set via the color and alpha input.
      *
