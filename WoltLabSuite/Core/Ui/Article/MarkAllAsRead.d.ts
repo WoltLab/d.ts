@@ -6,4 +6,4 @@
  * @license  GNU Lesser General Public License <http://opensource.org/licenses/lgpl-license.php>
  * @woltlabExcludeBundle tiny
  */
-export declare function setup(): void;
+export declare function setup(listView?: HTMLElement): void;
