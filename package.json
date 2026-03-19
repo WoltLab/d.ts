@@ -18,7 +18,7 @@
     "@woltlab/visual-dom-diff": "git+https://github.com/WoltLab/visual-dom-diff.git#e5b51fce3157d1eda310566fc1f86101341d1fea",
     "@woltlab/zxcvbn": "git+https://github.com/WoltLab/zxcvbn.git#5b582b24e437f1883ccad3c37dae7c3c5f1e7da3",
     "cropperjs": "2.1.0",
-    "exifreader": "^4.36.2",
+    "exifreader": "^4.37.0",
     "focus-trap": "^8.0.0",
     "hash-wasm": "^4.12.0",
     "html-parsed-element": "^0.4.1",
