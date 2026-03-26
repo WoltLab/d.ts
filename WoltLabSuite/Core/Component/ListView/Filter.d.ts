@@ -1,5 +1,5 @@
 /**
- * Handles the filterung of list views.
+ * Handles the filtering of list views.
  *
  * @author Marcel Werk
  * @copyright 2001-2025 WoltLab GmbH

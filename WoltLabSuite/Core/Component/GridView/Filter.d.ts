@@ -1,5 +1,5 @@
 /**
- * Handles the filterung of grid views.
+ * Handles the filtering of grid views.
  *
  * @author Marcel Werk
  * @copyright 2001-2025 WoltLab GmbH
