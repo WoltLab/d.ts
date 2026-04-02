@@ -4,5 +4,5 @@ type Response = {
     identifier: string;
     numberOfChunks: number;
 };
-export declare function upload(filename: string, fileSize: number, fileHash: string, objectType: string, context: string, exifBytes?: Exif | null): Promise<ApiResult<Response>>;
+export declare function upload(filename: string, fileSize: number, fileHash: string, objectType: string, context: string, exifBytes?: Exif | null, ignoreExifRotation?: boolean): Promise<ApiResult<Response>>;
 export {};
