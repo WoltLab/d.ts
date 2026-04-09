@@ -14,5 +14,5 @@ export type AutosavePayload = {
     timestamp: number;
 };
 export declare function deleteDraft(identifier: string): void;
-export declare function setupRestoreDraft(editor: CKEditor5.ClassicEditor.ClassicEditor, identifier: string): void;
-export declare function initializeAutosave(element: HTMLElement, configuration: CKEditor5.Core.EditorConfig, identifier: string): void;
+export declare function setupRestoreDraft(editor: CKEditor5.ClassicEditor, identifier: string): void;
+export declare function initializeAutosave(element: HTMLElement, configuration: CKEditor5.EditorConfig, identifier: string): void;

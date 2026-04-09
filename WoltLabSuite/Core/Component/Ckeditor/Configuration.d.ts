@@ -35,4 +35,4 @@ export type Features = {
     underline: boolean;
     undo: boolean;
 };
-export declare function createConfigurationFor(features: Features): CKEditor5.Core.EditorConfig;
+export declare function createConfigurationFor(features: Features): CKEditor5.EditorConfig;

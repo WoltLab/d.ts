@@ -17,7 +17,7 @@ import { Features } from "./Ckeditor/Configuration";
 import type { WoltlabSmileyItem } from "@woltlab/editor/plugins/ckeditor5-woltlab-smiley";
 declare class Ckeditor {
     #private;
-    constructor(editor: CKEditor5.ClassicEditor.ClassicEditor, features: Features);
+    constructor(editor: CKEditor5.ClassicEditor, features: Features);
     destroy(): Promise<void>;
     discardDraft(): void;
     focus(scrollIntoView?: boolean): void;
@@ -31,14 +31,14 @@ declare class Ckeditor {
     get element(): HTMLElement;
     get features(): Features;
     get sourceElement(): HTMLElement;
-    get focusTracker(): CKEditor5.Utils.FocusTracker;
+    get focusTracker(): CKEditor5.FocusTracker;
 }
 type WoltlabBbcodeItem = {
     icon: string;
     name: string;
     label: string;
 };
-export declare function setupCkeditor(element: HTMLElement, features: Features, bbcodes: WoltlabBbcodeItem[], smileys: WoltlabSmileyItem[], codeBlockLanguages: CKEditor5.CodeBlock.CodeBlockConfig["languages"], licenseKey: string): Promise<CKEditor>;
+export declare function setupCkeditor(element: HTMLElement, features: Features, bbcodes: WoltlabBbcodeItem[], smileys: WoltlabSmileyItem[], codeBlockLanguages: CKEditor5.CodeBlockConfig["languages"], licenseKey: string): Promise<CKEditor>;
 export declare function getCkeditor(element: HTMLElement): CKEditor | undefined;
 export declare function getCkeditorById(id: string, throwIfNotExists?: boolean): Ckeditor | undefined;
 export type CKEditor = InstanceType<typeof Ckeditor>;

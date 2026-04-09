@@ -11,4 +11,4 @@
  */
 import type { CKEditor5 } from "@woltlab/editor";
 import type { CKEditor } from "../Ckeditor";
-export declare function setup(editor: CKEditor5.ClassicEditor.ClassicEditor, ckeditor: CKEditor): void;
+export declare function setup(editor: CKEditor5.ClassicEditor, ckeditor: CKEditor): void;

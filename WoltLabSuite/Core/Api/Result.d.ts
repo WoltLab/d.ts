@@ -20,7 +20,7 @@ export type ApiResult<T> = {
     unwrap(): never;
 };
 export declare function apiResultFromValue<T>(value: T): ApiResult<T>;
-export declare function apiResultFromError(error: Error): Promise<ApiResult<never>>;
+export declare function apiResultFromError(error: unknown): Promise<ApiResult<never>>;
 export declare function apiResultFromStatusNotOk(e: StatusNotOk): Promise<ApiResult<never>>;
 /**
  * Helper method for API requests that are expected to never fail. Infallible
