@@ -67,6 +67,16 @@ declare class Instructions {
      */
     protected changeInstructionPip(event: Event): void;
     /**
+     * Toggles the visibility of the value and runStandalone form fields based on the selected pip.
+     */
+    protected toggleValueAndRunStandaloneFormFields(instructionsId: InstructionsId, show: boolean): void;
+    /**
+     * Validates that the `void` instruction is only used inside `update` sections and that it is
+     * the only instruction within its section. Returns `false` and shows an inline error if the
+     * placement is invalid.
+     */
+    protected validateVoidUsage(errorTarget: HTMLElement, section: HTMLElement, pip: string, excludedInstructionId: string | null): boolean;
+    /**
      * Opens a dialog to edit an existing instruction.
      */
     protected editInstruction(event: Event): void;

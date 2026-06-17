@@ -10,9 +10,7 @@ import { Poll } from "../Poll";
 export declare class Participants {
     protected readonly pollManager: Poll;
     private button;
-    private userList?;
     constructor(manager: Poll);
-    private open;
     showButton(): void;
     hideButton(): void;
 }

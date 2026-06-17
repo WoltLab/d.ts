@@ -10,4 +10,4 @@
  * @deprecated 6.0 Use the attribute `[data-report-content]` instead.
  */
 export declare function registerLegacyButton(element: HTMLElement, objectType: string): void;
-export declare function setup(): void;
+export declare function setup(reportEndpointUrl: string): void;

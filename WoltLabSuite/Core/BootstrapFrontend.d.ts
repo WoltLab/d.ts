@@ -18,12 +18,12 @@ interface BootstrapOptions {
         notificationLastReadTime: number;
     };
     dynamicColorScheme: boolean;
-    endpointUserPopover: string;
     executeCronjobs: string | undefined;
     shareButtonProviders?: ShareProvider[];
     styleChanger: boolean;
     removeQuotes?: string[];
     usedQuotes?: Map<string, string[]>;
+    reportEndpoint: string;
 }
 /**
  * Bootstraps general modules and frontend exclusive ones.
