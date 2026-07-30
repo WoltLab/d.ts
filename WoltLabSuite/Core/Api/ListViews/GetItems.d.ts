@@ -12,5 +12,5 @@ type Response = {
     totalItems: number;
     filterLabels: ArrayLike<string>;
 };
-export declare function getItems(listViewClass: string, pageNo: number, sortField?: string, sortOrder?: string, filters?: Map<string, string>, listViewParameters?: Map<string, string>): Promise<Response>;
+export declare function getItems(listViewClass: string, pageNo: number, sortField?: string, sortOrder?: string, filters?: Map<string, string>, listViewParameters?: Map<string, string>, allowFiltering?: boolean, allowSorting?: boolean, allowInteractions?: boolean, allowBulkInteractions?: boolean): Promise<Response>;
 export {};

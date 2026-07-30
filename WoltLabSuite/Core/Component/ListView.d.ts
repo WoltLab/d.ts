@@ -8,5 +8,5 @@
  */
 export declare class ListView {
     #private;
-    constructor(viewId: string, viewClassName: string, pageNo: number, baseUrl: string | undefined, sortField: string | undefined, sortOrder: string | undefined, defaultSortField: string | undefined, defaultSortOrder: string | undefined, bulkInteractionProviderClassName: string, listViewParameters?: Map<string, string>);
+    constructor(viewId: string, viewClassName: string, pageNo: number, baseUrl: string | undefined, sortField: string | undefined, sortOrder: string | undefined, defaultSortField: string | undefined, defaultSortOrder: string | undefined, bulkInteractionProviderClassName: string, allowFiltering?: boolean, allowSorting?: boolean, allowInteractions?: boolean, allowBulkInteractions?: boolean, listViewParameters?: Map<string, string>);
 }
