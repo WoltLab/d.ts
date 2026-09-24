@@ -31,7 +31,7 @@ type ResultConfirmationWithReason = {
 };
 declare class ConfirmationPrefab {
     custom(question: string): ConfirmationCustom;
-    delete(title?: string): Promise<boolean>;
+    delete(title?: string, affectedObjects?: string[]): Promise<boolean>;
     disable(title?: string): Promise<boolean>;
     restore(title?: string): Promise<boolean>;
     softDelete(): Promise<ResultSoftDeleteWithoutReason>;

@@ -19,5 +19,10 @@ type ResultConfirmationWithReason = {
     result: boolean;
     reason?: string;
 };
-export declare function handleConfirmation(objectName: string, confirmationType: ConfirmationType, customMessage?: string): Promise<ResultConfirmationWithReason>;
+/**
+ * Parses the JSON encoded list of affected objects from a data attribute. Absent or
+ * malformed values yield an empty list, the confirmation is then shown without them.
+ */
+export declare function parseAffectedObjects(value: string | undefined): string[];
+export declare function handleConfirmation(objectName: string, confirmationType: ConfirmationType, customMessage?: string, affectedObjects?: string[]): Promise<ResultConfirmationWithReason>;
 export {};

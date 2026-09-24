@@ -9,7 +9,8 @@
  */
 declare class QuoteList {
     #private;
-    constructor(editorId: string, editor: HTMLElement, containerId?: string);
+    constructor(editorId: string, editor: HTMLElement, container: HTMLElement);
+    get editorId(): string;
     renderQuotes(): void;
 }
 export declare function getQuoteList(editorId: string): QuoteList | undefined;
