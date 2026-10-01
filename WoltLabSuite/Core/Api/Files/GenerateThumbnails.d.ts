@@ -9,5 +9,5 @@ type Response = {
     mimeType: string;
     thumbnails: Thumbnail[];
 };
-export declare function generateThumbnails(fileID: number): Promise<ApiResult<Response>>;
+export declare function generateThumbnails(fileID: number, uploaderToken?: string): Promise<ApiResult<Response>>;
 export {};

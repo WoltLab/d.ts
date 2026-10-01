@@ -1,5 +1,10 @@
 import WoltlabCoreFileElement from "WoltLabSuite/Core/Component/File/woltlab-core-file";
 import "WoltLabSuite/Core/Component/File/woltlab-core-file";
+/**
+ * Returns the secret token of the uploader that the server added to the context
+ * of the upload element, if the file processor uses one.
+ */
+export declare function getUploaderToken(element: HTMLElement): string | undefined;
 export declare function trackUploadProgress(element: HTMLElement, file: WoltlabCoreFileElement): void;
 export declare function removeUploadProgress(element: HTMLElement): void;
 export declare function getErrorMessageFromFile(file: WoltlabCoreFileElement): string;
