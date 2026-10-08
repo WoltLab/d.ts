@@ -12,6 +12,8 @@ import "perfect-scrollbar";
 export interface BoostrapOptions {
     dynamicColorScheme: boolean;
     enableMobileMenu: boolean;
+    /** @since 6.3 */
+    enableSearch?: boolean;
     pageMenuMainProvider: PageMenuMainProvider;
 }
 /**

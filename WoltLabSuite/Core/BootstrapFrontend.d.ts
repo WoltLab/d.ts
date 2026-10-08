@@ -24,6 +24,7 @@ interface BootstrapOptions {
     removeQuotes?: string[];
     usedQuotes?: Map<string, string[]>;
     reportEndpoint: string;
+    templateVariants: string[];
 }
 /**
  * Bootstraps general modules and frontend exclusive ones.

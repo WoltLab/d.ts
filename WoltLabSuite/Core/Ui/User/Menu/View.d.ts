@@ -16,7 +16,10 @@ export declare class UserMenuView {
     private readonly provider;
     constructor(provider: UserMenuProvider);
     getElement(): HTMLElement;
-    open(): Promise<void>;
+    /**
+     * @param activateFocusTrap is `false` when the view is embedded into a container that traps the focus itself
+     */
+    open(activateFocusTrap?: boolean): Promise<void>;
     close(): void;
     getItems(): HTMLElement[];
     private setContent;
