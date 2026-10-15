@@ -13,11 +13,12 @@ export declare const enum StateChangeCause {
 }
 export declare class State extends EventTarget {
     #private;
-    constructor(gridId: string, table: HTMLTableElement, pageNo: number, baseUrl: string, sortField: string, sortOrder: string, defaultSortField: string, defaultSortOrder: string);
+    constructor(gridId: string, table: HTMLTableElement, pageNo: number, baseUrl: string, sortField: string, sortOrder: string, defaultSortField: string, defaultSortOrder: string, visibleColumns?: string[]);
     getPageNo(): number;
     getSortField(): string;
     getSortOrder(): string;
     getActiveFilters(): Map<string, string>;
+    getVisibleColumns(): string[] | undefined;
     getSelectedIds(): number[];
     updateFromResponse(cause: StateChangeCause, count: number, filterLabels: ArrayLike<string>): void;
     setBulkInteractionContextMenuOptions(options: string): void;
@@ -28,6 +29,7 @@ export declare class State extends EventTarget {
 interface StateEventMap {
     "grid-view:change": CustomEvent<{
         source: StateChangeCause;
+        includeHeader: boolean;
     }>;
     "grid-view:get-bulk-interactions": CustomEvent<{
         objectIds: number[];

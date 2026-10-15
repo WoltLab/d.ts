@@ -11,6 +11,7 @@ type Response = {
     pages: number;
     totalRows: number;
     filterLabels: ArrayLike<string>;
+    header?: string;
 };
-export declare function getRows(gridViewClass: string, pageNo: number, sortField?: string, sortOrder?: string, filters?: Map<string, string>, gridViewParameters?: Map<string, string>): Promise<Response>;
+export declare function getRows(gridViewClass: string, pageNo: number, sortField?: string, sortOrder?: string, filters?: Map<string, string>, gridViewParameters?: Map<string, string>, columns?: string[], includeHeader?: boolean): Promise<Response>;
 export {};
