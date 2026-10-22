@@ -19,6 +19,9 @@ export interface FormBuilderDialogOptions {
     successCallback: (returnValues: DatabaseObjectActionResponse["returnValues"]) => void;
     usesDboAction: boolean;
 }
+/**
+ * @deprecated 6.3
+ */
 export interface LabelFormFieldOptions {
     forceSelection: boolean;
     showWithoutSelection: boolean;

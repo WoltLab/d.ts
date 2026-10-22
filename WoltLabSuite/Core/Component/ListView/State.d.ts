@@ -15,6 +15,11 @@ export declare class State extends EventTarget {
     #private;
     constructor(viewId: string, viewElement: HTMLElement, pageNo: number, baseUrl: string, sortField: string, sortOrder: string, defaultSortField: string, defaultSortOrder: string);
     getPageNo(): number;
+    /**
+     * Reloads the list starting from the first page, the previous page may
+     * no longer exist after the parameters of the list view have changed.
+     */
+    resetPageNo(): void;
     getSortField(): string;
     getSortOrder(): string;
     getActiveFilters(): Map<string, string>;

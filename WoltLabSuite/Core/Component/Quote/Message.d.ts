@@ -1,8 +1,8 @@
 /**
  * Handles quotes selection in messages.
  *
- * @author Olaf Braun
- * @copyright 2001-2024 WoltLab GmbH
+ * @author Olaf Braun, Marcel Werk
+ * @copyright 2001-2026 WoltLab GmbH
  * @license GNU Lesser General Public License <http://opensource.org/licenses/lgpl-license.php>
  * @since 6.2
  * @woltlabExcludeBundle tiny

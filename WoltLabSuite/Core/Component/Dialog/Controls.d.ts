@@ -14,7 +14,7 @@ type AlertOptions = {
 type ConfirmationOptions = {
     primary: string;
 };
-type PromptOptions = {
+export type PromptOptions = {
     extra: string;
     primary: string;
 };

@@ -5,7 +5,8 @@
  * @since 6.3
  */
 import WoltlabCoreDialog from "WoltLabSuite/Core/Element/woltlab-core-dialog";
+import type { PromptOptions } from "../Dialog/Controls";
 export declare class ListViewSetup {
-    fromPreset(title: string, listViewClass: string, listViewParameters?: Map<string, string>, filters?: Map<string, string>, sortField?: string, sortOrder?: string, pageNo?: number): Promise<WoltlabCoreDialog>;
+    fromPreset(title: string, listViewClass: string, listViewParameters?: Map<string, string | string[]>, filters?: Map<string, string>, sortField?: string, sortOrder?: string, pageNo?: number, promptOptions?: Partial<PromptOptions>): Promise<WoltlabCoreDialog>;
 }
 export default ListViewSetup;

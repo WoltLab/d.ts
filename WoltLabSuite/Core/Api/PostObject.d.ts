@@ -9,5 +9,5 @@
  */
 import { ApiResult } from "./Result";
 type Payload = Blob | FormData | Record<string, unknown>;
-export declare function postObject(endpoint: string, payload?: Payload): Promise<ApiResult<[]>>;
+export declare function postObject<T = []>(endpoint: string, payload?: Payload): Promise<ApiResult<T>>;
 export {};

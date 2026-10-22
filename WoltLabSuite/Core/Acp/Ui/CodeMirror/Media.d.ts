@@ -1,7 +1,13 @@
-import { Media, MediaInsertType } from "../../../Media/Data";
+/**
+ * Inserts media files into a CodeMirror editor.
+ *
+ * @author Matthias Schmidt, Marcel Werk
+ * @copyright 2001-2026 WoltLab GmbH
+ * @license GNU Lesser General Public License <http://opensource.org/licenses/lgpl-license.php>
+ */
 declare class AcpUiCodeMirrorMedia {
     protected readonly element: HTMLElement;
     constructor(elementId: string);
-    protected insert(mediaList: Map<number, Media>, insertType: MediaInsertType, thumbnailSize?: string): void;
+    protected insert(): Promise<void>;
 }
 export = AcpUiCodeMirrorMedia;

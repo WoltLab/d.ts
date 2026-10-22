@@ -1,8 +1,8 @@
 /**
  * Inserts quotes into the editor.
  *
- * @author Alexander Ebert
- * @copyright 2001-2023 WoltLab GmbH
+ * @author Alexander Ebert, Marcel Werk
+ * @copyright 2001-2026 WoltLab GmbH
  * @license GNU Lesser General Public License <http://opensource.org/licenses/lgpl-license.php>
  * @since 6.0
  * @woltlabExcludeBundle tiny
@@ -12,5 +12,6 @@ export type InsertQuoteEventPayload = {
     content: string;
     isText: boolean;
     link: string;
+    uuid?: string;
 };
 export declare function setup(element: HTMLElement): void;

@@ -1,6 +1,6 @@
 /**
- * Enables editing of the icon, the icon color and the background color of a
- * badge trophy.
+ * Enables editing of the icon, the icon color, the background color and the
+ * border color of a badge trophy.
  *
  * @author    Alexander Ebert, Marcel Werk
  * @copyright 2001-2026 WoltLab GmbH

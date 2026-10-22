@@ -24,6 +24,11 @@ export declare class PageMenuMain implements PageMenuProvider {
     private watchForChanges;
     private buildMainMenu;
     private showActiveMenuItem;
+    /**
+     * Returns the elements that switch to a language by their language code, the
+     * new page footers host them instead of the page header.
+     */
+    private getLanguageSwitches;
     private buildLanguageMenu;
     private buildFooterMenu;
     private buildMenu;
