@@ -7,7 +7,6 @@
  */
 interface StyleEditorOptions {
     isTainted: boolean;
-    styleId: number;
 }
 /**
  * Sets up dynamic style options.

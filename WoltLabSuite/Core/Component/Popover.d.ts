@@ -13,5 +13,10 @@ type Configuration = {
     selector: string;
 };
 export declare function setupFor(configuration: Configuration): void;
+/**
+ * The dropdown menus have been moved into the global container and must be
+ * removed together with the content of the popover.
+ */
+export declare function destroyDropdowns(element: HTMLElement): void;
 export declare function resetCache(identifier: string, objectId: number): void;
 export {};

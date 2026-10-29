@@ -130,7 +130,5 @@ declare class UiMessageInlineEditor implements AjaxCallbackObject {
     _ajaxFailure(data: ResponseData): boolean;
     _ajaxSuccess(data: ResponseData): void;
     _ajaxSetup(): ReturnType<AjaxCallbackSetup>;
-    /** @deprecated  3.0 - used only for backward compatibility with `WCF.Message.InlineEditor` */
-    legacyEdit(containerId: string): void;
 }
 export = UiMessageInlineEditor;

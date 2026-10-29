@@ -1,15 +1,14 @@
 /**
  * Shows the ignore dialogs when editing users on the page listing ignored users.
  *
- * @author  Matthias Schmidt
- * @copyright  2001-2021 WoltLab GmbH
+ * @author  Matthias Schmidt, Marcel Werk
+ * @copyright  2001-2026 WoltLab GmbH
  * @license  GNU Lesser General Public License <http://opensource.org/licenses/lgpl-license.php>
  * @woltlabExcludeBundle all
+ * @deprecated 6.3 Use `wcf\system\listView\user\IgnoredUserListView` instead.
  */
-import FormBuilderDialog from "../../../Form/Builder/Dialog";
 export declare class UiUserIgnoreList {
-    protected dialogs: Map<number, FormBuilderDialog>;
     constructor();
-    protected openDialog(event: Event): void;
+    protected openDialog(button: HTMLElement): Promise<void>;
 }
 export default UiUserIgnoreList;
