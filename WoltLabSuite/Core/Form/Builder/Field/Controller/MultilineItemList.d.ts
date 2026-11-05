@@ -13,6 +13,7 @@ export declare class MultilineItemListFormField extends UiItemList.UiItemListLin
      */
     constructor(itemList: HTMLUListElement, options: UiItemList.LineBreakSeparatedTextOptions);
     getItems(): Set<string>;
+    protected getFieldId(): string;
     /**
      * @inheritDoc
      */

@@ -12,11 +12,8 @@ export declare class UiSearchExtended {
     private readonly typeInput;
     private readonly delimiter;
     private readonly filtersContainer;
-    private searchID;
-    private pages;
     private activePage;
     private lastSearchRequest;
-    private lastSearchResultRequest;
     private searchParameters;
     constructor();
     private initEventListener;
@@ -26,9 +23,6 @@ export declare class UiSearchExtended {
     private updateQueryString;
     private getFormData;
     private initQueryString;
-    private initPagination;
-    private getPaginationUrl;
-    private changePage;
     private removeSearchResults;
     private showSearchResults;
 }

@@ -6,7 +6,7 @@
  * @license GNU Lesser General Public License <http://opensource.org/licenses/lgpl-license.php>
  */
 declare class AcpUiCodeMirrorMedia {
-    protected readonly element: HTMLElement;
+    protected readonly element: HTMLTextAreaElement;
     constructor(elementId: string);
     protected insert(): Promise<void>;
 }
